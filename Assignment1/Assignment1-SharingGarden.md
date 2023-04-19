@@ -138,10 +138,10 @@ This system supports two types of user access: students from the school and mana
 
 1. Global View on Use Case
 
-   ​		![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/System_Overview.png)
+   ​		![](../img/System_Overview.png)
 
 2. Login&Register System
-   ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Register&Login_System.png)
+   ![](../img/Register&Login_System.png)
    
    | USE CASE         | REGISTER                                                     | LOGIN                                                        |
    | :--------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -155,7 +155,7 @@ This system supports two types of user access: students from the school and mana
 
 
 3. Forum System
-   ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Forum_System.png)
+   ![](../img/Forum_System.png)
    
    | USE CASE         | View Forum Page                                                     |Forum Interaction                                                        |
    | :--------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -177,7 +177,7 @@ This system supports two types of user access: students from the school and mana
 
 
 4. Maintainence System
-   ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Garden_Maintenance_System.png)
+   ![](../img/Garden_Maintenance_System.png)
 
    | USE CASE         | Submit garden information                             | Join Volunteer Even                                                        |Recruit volunteer |
    | :--------------- | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -190,7 +190,7 @@ This system supports two types of user access: students from the school and mana
 
 
 5. Visit System
-   ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Visit_System.png)
+   ![](../img/Visit_System.png)
    
       | USE CASE         |Score and Comment the Garden          |Report inappropriate Comments or Garden                              |
    | :--------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -204,7 +204,7 @@ This system supports two types of user access: students from the school and mana
 
 6. Create&Modify System
 
-   ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Garden_Create&Modify&Dismiss_System.png)
+   ![](../img/Garden_Create&Modify&Dismiss_System.png)
    | USE CASE         | Create or Modify or Remove a Garden               | Check Completion Status                                                        |
    | :--------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
    | Actor            | Student                                                      | campus administration                                 |
@@ -218,37 +218,37 @@ This system supports two types of user access: students from the school and mana
 ### 3.4 Activity Diagrams
 1. Register
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Rgister.png)
+  ![](../img/Rgister.png)
 
   Students submit registration applications, fill in personal information, and submit them. Then, the application sends a verification code. The system checks the personal information filled in by the applicant. If it is illegal, the system requires the applicant to fill in the information again. If it is legal, the system sends a verification code. After receiving the verification code, the applicant enters it immediately. The system checks the verification code. If it is verified successfully, the system authorizes the applicant, and the applicant officially obtains an account. If the verification fails, the user is asked to reapply for the verification code. Note that each verification code sent by the system will expire after 2 minutes. The user must enter the verification code during this period, otherwise, the user must reapply for the verification code. Users can abandon the registration application at any time while filling in personal information or waiting for verification.
 
 2. Login
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Login.png)
+  ![](../img/Login.png)
 
   Students enter the login interface, click to login, fill in the account ID and password, and the system checks the ID and password. If it is illegal, the system requires the user to fill in the information again. If it is legal, the user is allowed to log in, and the user enters the system main interface and successfully logs in. While filling in the ID and password, users can choose to abandon the login at any time.
 
 3. Comments in Forum
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Comment_in_Forum.png)
+  ![](../img/Comment_in_Forum.png)
 
   Students click to enter the forum comment box, and the system checks the user's comment permission. If it does not pass, the user is refused to post a comment. If it passes, the user is allowed to post a comment. After the user posts a comment, the system will also check the content of the comment. If it violates the rules, the comment will be deleted. Otherwise, the comment is successfully published.
 
 4. Score the Garden
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Score_Garden.png)
+  ![](../img/Score_Garden.png)
 
   Students enter the garden access interface, browse the information of various gardens, and score the gardens. After scoring, the system will check the average score of the garden. If it is high enough, the system will give corresponding activity points to the main contributors of the garden.
 
 5. Report Inappropriate Comments
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Report Inappropriate Comments for the Garden.png)
+  ![](../img/Report Inappropriate Comments for the Garden.png)
 
   Students enter the garden access interface or the comment area of the forum and browse the content of the comment area. If they find any inappropriate comments and report them, the system will first check the reporting user's reporting permission. If it passes, the system will check whether the comment content violates the rules. If it violates the rules, the comment will be deleted. If it does not violate the rules, the comment will be handed over to the campus administration for review. If the campus administration finds the comment content to be inappropriate, the comment will be deleted. If it is not inappropriate, the comment content will be preserved. Once the comment content is deleted, the reporter will be informed that the report was successful.
 
 6. Create a New Garden
 
-  ![](/Users/guolianglu/Desktop/courses/System/Assignment1/img/Create a new garden.png)
+  ![](../img/Create a new garden.png)
 
   Students enter the system interface, click to apply to create a new garden, and fill in garden information. The system checks the data format of the filled-in information. If it is not standardized, the applicant is required to fill in the information again. If it is standardized, the campus administration reviews the information for creating a new garden. If the campus administration finds the information to be unreasonable, the application will be rejected. If it is considered reasonable, the campus administration authorizes the applicant to fill in volunteer recruitment information and the system publishes the information to recruit volunteers to participate in creating a new shared garden. The campus administration also checks the completion status of the volunteer applicants and calculates the activity points based on their work effectiveness, which are rewarded to the volunteers.
 

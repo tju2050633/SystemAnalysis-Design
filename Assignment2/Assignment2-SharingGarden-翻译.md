@@ -32,15 +32,19 @@ Furthermore, the purpose of this document is to provide a comprehensive and deta
 
 In the first document, we have already provided readers with a detailed description of the functionalities of Sharing Garden project, and this document covers the progress of analysis model and architectural analysis.
 
-In this System Analysis Document, we have presented the project in terms of high-level architecture, detailed architectural decisions until current stage. We create the layer architecture diagram of the system and built the package diagram to illustrate the components of each layer.
+In order to gain a comprehensive understanding of the system and its functionalities, we conducted a System Detailed Analysis. Based on the analysis, we designed a System Hierarchical Architecture that clearly defines 5 subsystems within the system:
 
-We present analysis models, including class diagram, and interaction diagram. For class diagrams and interaction diagrams, they presents relationship and interactions between entity classes, boundary classes and control classes. We updated our system during analysis. Significant progress has been made in the development of various system components. 
+- Login & Register System
+- Forum   
+- Garden Update 
+- Garden View   
+- Report
+
+ For each subsystem, we created robustness diagrams, class diagrams, and sequence diagrams to illustrate their interactions and behaviors. Furthermore, we updated the existing use case models to enhance their simplicity and clarity.
 
 在第一篇文档中，我们已经为读者提供了共享花园项目功能的详细描述，这篇文档涵盖了分析模型和架构分析的进展。
 
-在这个系统分析文档中，我们已经根据高层次的体系结构，详细的体系结构决策介绍了这个项目，直到当前阶段。我们创建了系统的层架构图，并构建了包图来说明每层的组件。
-
-给出了分析模型，包括序列图、类图和交互图。对于序列图，开发人员可以了解系统在每个用例中的工作方式。在类图方面，它描述了实体类、边界类和控制类之间的关系。我们在分析过程中更新了系统。各系统组件的开发取得了重大进展。
+为了全面了解系统及其功能，我们进行了系统细节分析。根据该分析，我们设计了系统整体架构图，明确定义了系统内的五个子系统。对于每个子系统，我们创建了鲁棒图、类图和时序图，以展示其交互和行为。此外，我们还更新了现有的用例模型，以增强其简洁性和清晰性。
 
 
 
@@ -50,7 +54,6 @@ Throughout the system analysis process, we have identified several areas where e
 
 - Simplifying the user experience by implementing intuitive and user-friendly interfaces, ensuring that users can easily navigate and interact with the Shared Garden platform.
 - Refining the system's architecture by categorizing classes into three distinct parts: boundary classes, control classes, and entity classes. This clear separation improves the system's clarity, maintainability, and security.
-- Introducing a new subsystem called the Garden Management System, which provides users with convenient tools for managing and organizing their garden-related activities. This subsystem enhances the overall functionality and completeness of the Shared Garden platform.
 - Making necessary modifications to the use case diagram to accurately reflect the updated system components and user interactions.
 
 These changes aim to streamline the user experience, enhance system reliability, and provide a comprehensive platform for garden enthusiasts. By addressing these areas of improvement, we strive to create a system that not only meets the immediate needs of users but also allows for future scalability and adaptability.
@@ -59,7 +62,6 @@ These changes aim to streamline the user experience, enhance system reliability,
 
 - 通过实现直观和用户友好的界面，简化用户体验，确保用户可以轻松地浏览和与共享花园平台进行交互。
 - 通过将类别划分为边界类、控制类和实体类，优化系统的架构。这种明确的划分提高了系统的清晰度、可维护性和安全性。
-- 引入一个名为花园管理系统的新子系统，为用户提供方便的工具来管理和组织与花园相关的活动。该子系统增强了共享花园平台的整体功能和完整性。
 - 对用例图进行必要的修改，准确反映更新后的系统组件和用户交互。
 
 这些变更旨在简化用户体验、提高系统可靠性，并为花园爱好者提供一个全面的平台。通过解决这些改进方面，我们努力创建一个不仅满足用户当前需求，而且具有未来可扩展性和适应性的系统。
@@ -70,15 +72,13 @@ These changes aim to streamline the user experience, enhance system reliability,
 
 
 
-The "Sharing Garden" project is a web-based application focused on facilitating the creation and sharing of campus gardens among students. In order to develop an effective and user-friendly platform, we need to carefully analyze and design the system architecture. Our primary considerations are providing rich and comprehensive functionality, ensuring the security and privacy of user information, and optimizing platform performance and availability for developers.
+The "Sharing Garden" project is a web-based application that aims to facilitate the creation and sharing of campus gardens among students. To develop an effective and user-friendly platform, it is crucial to conduct a thorough system analysis and design the architecture accordingly. Our analysis includes a System Detailed Analysis, Hierarchical Architecture Design, and Robustness Diagrams. The key considerations for our architecture design are providing extensive and comprehensive functionality, ensuring the security and privacy of user information, and optimizing platform performance and availability for developers.
 
-“共享花园”项目是一个基于网络的应用程序，旨在促进学生创建和共享校园花园。为了开发一个有效且用户友好的平台，我们需要仔细分析和设计系统架构。我们的主要考虑是提供丰富而全面的功能，确保用户信息的安全性和隐私性，以及为开发人员优化平台性能和可用性。
+“共享花园”项目是一个基于网络的应用程序，旨在促进学生之间创建和共享校园花园。为了开发一个有效且用户友好的平台，我们需要进行全面的系统分析，并相应地设计架构。我们的分析包括系统细节分析、分层架构设计和鲁棒图。我们的架构设计主要考虑提供全面且丰富的功能、确保用户信息的安全和隐私，并为开发人员优化平台性能和可用性。
 
 ### 2.1 System Detailed Analysis
 
 During the requirements phase, we extensively studied the interactions between various system components and external entities. We also conducted a preliminary analysis of the system using use cases. In the early stages of architecture design, we focused on defining the specific behavioral steps required to fulfill each use case. Subsequently, we broke down the system into smaller subsystems based on their functionalities and transformed the use cases into robust graphical representations.
-
-![](系统细节分析图)
 
 The system can be classified into several subsystems based on their specific functions, including the login and registration system, garden activity management system, garden club management system, member management system, forum system, and personal information maintenance system. Building upon this classification, we established a hierarchical structure for the system, taking into account responsibilities and generalizability, to further divide it into subsystems.
 
@@ -88,27 +88,132 @@ The system can be classified into several subsystems based on their specific fun
 
 ### 2.2 Hierarchical Architecture Design
 
-For the architecture design of the "Sharing Garden" project, we have adopted the classic MVC (Model-View-Controller) three-tier architecture. This architecture provides a structured approach to separate the presentation layer (View) from the application logic (Controller) and the underlying data management (Model). By implementing the MVC pattern, we can achieve better modularity, maintainability, and scalability of the system.
+This system is mainly divided into presentation layer, application layer, business interface layer, business logic layer, data access layer, and communication layer. There is data communication and module invocation between each layer. The overall architecture diagram is shown below.
 
-![](MVC架构图)
+本系统主要分为表现层、应用层、业务接口层、业务逻辑层、数据访问层和 通信层，各个层之间有数据通信和模块的调用，以下为整体架构图
 
-At the presentation layer (View), we will focus on developing a user-friendly and intuitive web interface where users can interact with the system. This includes features such as designing and managing their gardens, exploring and visiting other gardens, participating in forums, and accessing personal information.
+<img src='img/Sharing Garden System Architecture.png' width='70%'/>
 
-In the application logic layer (Controller), we will implement the necessary business logic to handle user actions and process data. This includes functionalities like managing garden activities, club membership, user authentication and authorization, and facilitating communication between users.
 
-The underlying data management layer (Model) will handle the storage and retrieval of data related to gardens, users, activities, and other system entities. We will design a robust database schema and implement appropriate data access mechanisms to ensure data integrity and efficiency.
 
-By adopting the MVC architecture, we can achieve a clear separation of concerns, enhance code reusability, and facilitate future enhancements and modifications to the system.
+#### 2.2.1 The presentation layer
 
-对于“共享花园”项目的架构设计，我们采用了经典的MVC（Model-View-Controller）三层架构。该架构能够有效地将展示层（视图）与应用逻辑（控制器）以及底层数据管理（模型）进行分离。通过实现MVC模式，我们能够实现系统的更好模块化、可维护性和可扩展性。
+The presentation layer is primarily responsible for interacting with users and encapsulating user interaction data to be processed by subsequent layers. It also displays different interfaces based on feedback from the business layer.
 
-在展示层（视图）方面，我们将专注于开发一个用户友好且直观的Web界面，使用户能够与系统进行交互。这包括设计和管理自己的花园、探索和访问其他花园、参与论坛以及访问个人信息等功能。
+- Interface Interaction Component: This component is responsible for presenting different pages to users, facilitating user input. 
+- Data Encapsulation Component: It encapsulates and encrypts the data entered by the user. 
+- Data Transmission Component: It transmits the user's input data to the business layer for processing.
 
-在应用逻辑层（控制器）方面，我们将实现必要的业务逻辑，处理用户的操作和数据处理。这包括管理花园活动、俱乐部成员管理、用户身份验证和授权以及促进用户之间的交流等功能。
+表现层主要负责和用户的交互，并将用户的交互数据封装后传给后续进行 处理;同时其根据来自业务层的反馈信息，展示不同的界面。 
 
-底层的数据管理层（模型）将负责处理与花园、用户、活动和其他系统实体相关的数据的存储和检索。我们将设计一个健壮的数据库模式，并实现适当的数据访问机制，以确保数据的完整性和高效性。
+- 界面交互(Interface Interaction Component):其主要负责展现给用 户不同的页面，便于用户的输入。 
 
-通过采用MVC架构，我们可以实现关注点的清晰分离，提高代码的可重用性，并便于未来对系统进行改进和修改。
+- 数据封装(Data Encapsulation Component):将用户输入的数据进行封 装加密。 
+- 数据传送(Data Transmission Component):将用户输入的数据传送给 业务层进行处理。
+
+![](img/Presentation Layer.png)
+
+#### 2.2.2 The application layer
+
+The application layer is one of the core layers of the system, serving as a bridge to coordinate the scheduling and interaction of data between the presentation layer and the business logic layer. During the operation of the system, the application layer receives user requests from the presentation layer and forwards them to the corresponding business logic layer for processing. It is also responsible for transmitting the results returned by the business logic layer to the presentation layer for displaying the processing results to the user.
+
+应用层是系统的核心层之一，它起着桥梁的作用，负责协调数据在表现层和业务逻辑层之间的调度和交互。在系统运行过程中，应用层接收来自表现层的用户请求，并将请求转发给相应的业务逻辑层进行处理。它还负责将业务逻辑层返回的结果传递给表现层，以便将处理结果展示给用户。
+
+![](img/Application Layer.png)
+
+#### 2.2.3 The business interface layer
+
+The business interface layer is a vital component of the system, responsible for presenting the functionalities of the business logic layer to the outside. It serves as a link between the presentation layer and the business logic layer, receiving data from the presentation layer and passing it to the business interface layer. Depending on the situation, the business interface layer calls different modules from the business logic layer to perform operations.
+
+- Data Transmission Component: Transfers data from the presentation layer to the business logic layer and sends data from the business logic layer to the presentation layer. 
+- Business Interface: An interface used to invoke different business operations within the business logic layer.
+
+业务接口层是系统中的一个重要组成部分，主要负责将业务逻辑层的功能对外展示。它充当着表现层与业务逻辑层之间的纽带，接收来自表现层的数据并将其传递给业务接口层。根据不同的情况，业务接口层会调用业务逻辑层中的不同模块来进行操作。
+
+- 数据传送组件：负责将来自表现层的数据传送给业务逻辑层，并将来自业务逻辑层的数据发送给表现层。 
+- 业务接口：用于调用业务逻辑层中不同业务操作的接口。
+
+![](img/Business Interface Layer.png)
+
+
+
+#### 2.2.4 The business Implementation  layer
+
+The business implementation layer is the core of the overall architecture, playing a crucial role. It is responsible for implementing various business subsystems and transmitting the corresponding processed data to the presentation layer or data access layer.
+
+业务逻辑层是整体架构的核心，承担着关键的角色。它负责实现各个业务子系统，并将相应的处理数据传输给表现层或数据访问层。
+
+![](/Users/guolianglu/Desktop/courses/System/Assignment2/img/Business Implementation Layer.png)
+
+- Data Transmission Component: Receives data from the data access layer and sends it to the business interface layer. 
+- Business Implementation: Handles the implementation logic of different business modules, processes various business requirements, and provides feedback on the processed results or requests to the data transmission module.
+
+
+
+- 数据传送组件：接收来自数据访问层的数据，并将这些数据发送给业务接口层。 
+- 业务实现：负责不同业务模块的具体实现逻辑，处理各类业务需求，并将处理后的结果或请求反馈给数据传送模块。
+
+<img src='img/Business Implementation Layer(with use case).png' width='70%'/>
+
+#### 2.2.5 The data access layer
+
+The data access layer is a crucial component in the system architecture, responsible for interacting with and accessing the database. It performs different database operations based on the varying data requirements from the business layer.
+
+数据访问层是系统架构中的一个关键组成部分，主要负责与数据库进行交互和访问。根据业务层对数据的不同要求，数据访问层执行相应的数据库操作。
+
+![](img/Data Access Layer.png)
+
+#### 2.2.6 The data transmission layer
+
+The data transmission layer is a critical component responsible for the transfer of information and signals between the main architectural layers of the system.
+
+数据传输层是系统主要架构层之间信息和信号传输的关键组成部分。它承担着将数据在各个主要架构层之间进行传输的任务。
+
+![](img/Data Transmission Layer.png)
+
+
+
+### 2.3 Robustness Diagrams
+
+Through the use of robustness diagrams, we can provide a visual representation of the internal structure of each module and the interactions between them. This helps us gain a better understanding of the module's functionality and requirements, laying a foundation for model design. This analysis and design process enables us to better meet the system's functional requirements and ensure its stability and reliability in practical operation.
+
+通过绘制鲁棒图，我们能够清晰地展示每个模块内部的结构和模块之间的交互关系。这有助于我们更好地理解模块的功能和需求，并为模型设计提供基础。这样的分析和设计过程使我们能够更好地满足系统的功能需求，并确保系统在实际运行中的稳定性和可靠性。
+
+#### 2.3.1 Login & Register System
+
+<img src='img/Login&Register Robustness.png' width='70%'/>
+
+
+
+
+
+#### 2.3.2 Forum System
+
+<img src='img/Forum Robustness.png' width='70%'/>
+
+
+
+#### 2.3.3 Garden Update System
+
+<img src='img/Garden Update Robustness.png' width='70%'/>
+
+
+
+
+
+#### 2.3.4 Garden View System
+
+<img src='img/Garden View Robustness.png' width='70%'/>
+
+
+
+
+
+#### 2.3.5 Report System
+
+<img src='img/Report Robustness.png' width='70%'/>
+
+
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -117,17 +222,23 @@ By adopting the MVC architecture, we can achieve a clear separation of concerns,
 
 
 
-### 3.1 Login&Register System
+### 3.1 Login & Register System
 
 
 
 #### 3.1.1 Class Diagram
 
-![](子系统类图)
+<img src='img/Login&Register Class.png' width='70%'/>
+
+
 
 #### 3.1.2 Interaction Diagram
 
-![](子系统活动图)
+The following sequence diagram illustrates the system's processing flow during user login. On the login page, users can enter relevant information and click on "Login." The system will check if the password is correct, leading to either a page transition for the user or an error message indicating an incorrect password. On the registration page, users are required to create an account. The system will check if the account already exists. If it does not exist, a new account will be created for the user and saved in the database.
+
+下面的时序图展示了用户登陆时系统的处理过程。在登陆页面，用户可以输入相关信息后点击登陆，系统会检查密码是否正确，从而让用户的界面跳转或提示密码错误。注册页面则需要用户创建账号，系统会检查账号是否已存在，若不存在则为其创建新账号并保存在数据库中。
+
+<img src='img/Login&Register Sequence.png' width='70%'/>
 
 
 
@@ -137,97 +248,211 @@ By adopting the MVC architecture, we can achieve a clear separation of concerns,
 
 #### 3.2.1 Class Diagram
 
+<img src='img/Forum Class.png' width='70%'/>
+
 
 
 #### 3.2.2 Interaction Diagram
 
+The following sequence diagram illustrates the system's processing flow when a user browses the forum's homepage. Users can click on a page to view detailed content, and the system retrieves the relevant content from the database for display. Users can navigate through the available content on the homepage by clicking on the "Next Page" or "Previous Page" buttons. The system will determine if there is a next or previous page and either display the content of that page or notify the user that the page does not exist.
 
+下面的时序图展示了用户浏览论坛首页时系统的处理过程。用户可以点进展示详细内容的页面，系统从数据库中取出相关内容进行展示。用户可以点击下一页、上一页来翻阅首页存在的内容，系统会判断是否还存在下一页或上一页，从而选择展示这一页的内容或提示用户该页不存在。
 
+<img src='img/Forum View Column Sequence.png' width='70%'/>
 
+The following sequence diagram illustrates the interaction process between a user and the system when browsing the comment section of a forum. Users can add comments, reply to comments, delete comments, or like comments. The system will assess the user's permissions and provide feedback accordingly. It will also make modifications to the database as necessary.
 
-### 3.3 Garden Create & Modify System
+这张时序图则展现了用户浏览论坛评论区时与系统的交互过程。用户可以添加评论，回复评论，删除评论或点赞评论。系统会判断用户权限并给予反馈和进行数据库的修改。
+
+<img src='img/Forum View Comment Sequence.png' width='70%'/>
+
+### 3.3 Garden Update System
 
 
 
 #### 3.3.1 Class Diagram
 
+<img src='img/Garden Update Class.png' width='70%'/>
+
 
 
 #### 3.3.2 Interaction Diagram
 
+The following sequence diagram illustrates the scenario where a user requests to modify a garden. When the user clicks on the "Apply" button, the modification request is submitted for backend review. If the review is approved, the system notifies the user of the successful modification and displays the specific details of the garden before and after the modification. It also provides a detailed display of the modified areas. If the review is not approved, the system informs the user that their application has been rejected.
+
+下面的时序图展示的情况是用户请求修改花园。用户点击申请后，申请会递交后端审核。若审核通过，则系统提示修改成功并向用户展示修改前后的花园具体信息、详细展示了修改的地方。若审核未通过，则需要提升用户申请失败。
+
+<img src='img/Garden Update Apply Sequence.png' width='70%'/>
+
+The following sequence diagram illustrates the scenario where a system administrator reviews user requests. The administrator can first click on "View Details," and the system will display the specific details of the garden before and after the modification, including the modified areas. If the administrator clicks on "Approve," the system will mark the request as approved. If the administrator clicks on "Reject," the system will mark the request as rejected.
+
+这张时序图说明的情况是系统管理员审核用户发送的请求。管理员可以首先点击查看详细信息，系统会展示修改前后的具体情况和修改的部位。如果管理员点击通过，则系统将该申请记录为已通过；如果点击拒绝，则系统将该申请记录为已拒绝。
+
+<img src='img/Garden Update Review Sequence.png' width='70%'/>
+
+The following sequence diagram illustrates the system processing flow for a user applying to become a volunteer. The user can first click on "Fill in the relevant information," and the system will store this information in the database. Then, the user can click on the "Join as Volunteer" button to submit an application to the administrator. If the application is approved, the user will receive a system notification indicating the successful application and detailed feedback. If the application is not approved, the user will receive a system notification indicating the unsuccessful application and providing specific reasons.
+
+这张时序图展现了用户申请成为志愿者的系统处理过程。用户可以先点击填写相关信息，并由系统存储在数据库中。接着，用户可以点击加入志愿者按钮，向管理员递交申请。如果通过，则用户收到系统的申请成功提示和反馈的详细说明信息；如果未通过，则用户收到系统的申请失败提示和具体原因。
+
+<img src='img/Garden Update Volunteer Join Sequence.png' width='70%'/>
+
+The following sequence diagram illustrates how an administrator reviews a user's volunteer application. The administrator can click on "View Application Details" to see the detailed information of the application and choose to either accept or reject it.
+
+这张时序图则展示了管理员如何审核用户的志愿者申请。与审核花园修改请求类似，管理员可以点击查看申请的详细信息，并选择接受或拒绝申请。
+
+<img src='img/Garden Update Review Apply Sequence.png' width='70%'/>
 
 
 
 
-### 3.4 Garden Maintenance  System
+
+### 3.4 Garden View System
 
 
 
 #### 3.4.1 Class Diagram
 
+<img src='img/Garden View Class.png' width='70%'/>
+
 
 
 #### 3.4.2 Interaction Diagram
 
+The following sequence diagram illustrates how a user can view detailed information about a garden. The user can click on a garden of interest, and the system will retrieve and display specific details about that garden. The user can interact with the interface by liking, rating, and leaving comments. The system will record these actions. Comments will undergo backend review, and if approved, the user can see the published comments. If not approved, the user will receive a notification.
+
+这张时序图展现了用户如何查看花园详细信息。用户可以点击感兴趣的花园，系统会返回该花园的具体情况。用户可以在界面中点赞、评分和留下评论，系统会记录这些操作。其中评论会交由后端审核，若通过则用户可以看见发布的评论，若未通过用户也会收到提示。
+
+<img src='img/Garden View Sequence.png' width='70%'/>
 
 
 
-
-### 3.5 Garden Visit System
+### 3.5 Report System
 
 
 
 #### 3.5.1 Class Diagram
 
+<img src='img/Report Class.png' width='70%'/>
+
 
 
 #### 3.5.2 Interaction Diagram
 
+The following sequence diagram illustrates the process of a user reporting inappropriate content. The user clicks on the "Report" button, and the system sends the relevant content to undergo backend review. Once the review is complete, the system provides a notification on the interface to inform the user of the review outcome. The user also has the option to cancel the report.
 
+这张时序图展现了用户举报不良内容的过程。用户点击举报按钮，系统会把相关内容送往后端审核，审核结果会在审核结束后返回界面提示用户。用户也可以选择取消举报。
 
+<img src='img/Report User Sequence.png' width='70%'/>
 
+The following sequence diagram illustrates the process of an administrator reviewing reported content. The administrator can view the detailed information of the report and choose to either approve or reject the report.
 
-### 3.6 Report & Censor System
+下面的时序图展现了管理员审核举报的过程。管理员可以查看举报详细内容，并选择通过或拒绝举报。
 
+<img src='img/Report Admin Review Sequence.png' width='70%'/>
 
+Additionally, the system supports the administrator's ability to directly delete content. The administrator can click on the delete button to remove inappropriate content directly, and they also have the option to cancel the deletion operation.
 
-#### 3.6.1 Class Diagram
+此外，系统还支持管理员直接对内容进行删除的操作。管理员可以通过点击删除按钮直接删除不良内容，也可以取消删除操作。
 
-
-
-#### 3.6.2 Interaction Diagram
-
-
-
-
+<img src='img/Report Admin Delete Sequence.png' width='70%'/>
 
 ## 4. Updated Use Case Model
 
+We originally had five major systems, namely the Login&Register System, Forum System, Garden Maintenance System, Visit System, and Garden Create&Modify&Dismiss System. The Login&Register System remains unchanged, while the other systems undergo certain modifications, including but not limited to:
 
+- The Garden Maintenance System and Garden Create&Modify&Dismiss System are merged into a single system called the Garden Update System.
+- The authentication function is removed from all systems, as users who can log in to the system have already completed the identity verification process.
+- The Visit System is renamed as the Garden View System, and the reporting functionality for inappropriate content is removed from all systems. Instead, a new Report System is created specifically for students to report incidents to the campus administrators.
+- Newly added report system is as the following image shows:
 
-### 4.1 Updated System :  Login&Register System
-
-
-
-### 4.2 Updated System :  Forum System
-
-
-
-### 4.3 Updated System :  Garden create & Modify System
+<img src='img/Report System.png' width='70%'/>
 
 
 
-### 4.4 Updated System :  Garden Maintenance System
+我们原本有5大系统，分别是Login&Register System, Forum System, Garden Maintenance System, Visit System, Garden Create&Modify&Dismiss System。现Login&Register System维持不变，其他系统做一定删改，包括但不限于：
+
+- 将Garden Maintenance System和Garden Create&Modify&Dismiss System融合成一个Garden Update System
+
+- 删去所有系统中的身份验证功能，因为能登入系统的用户已经完成了身份信息的验证
+
+- 将Visit System更名为Garden View System，将所有系统中的不良内容举报功能删去，融合成一个Report System，专门用于学生向校园管理员举报。
 
 
 
-### 4.5 Updated System :  Garden Visit System
+
+### 4.1 Forum System
+
+The forum system is modified as follows:
+
+- The authentication function has been removed because users who can log into the system are assumed to have already been verified. 
+- The reporting functionality for inappropriate content has been removed as there is an additional Report System to handle this task. 
+- Due to the absence of authentication and content reporting features, campus administrators are no longer involved as users in this system. 
+- The "View Forum Page" feature has been further specialized into "View Column," "View Columns," and "View Comments."
+
+论坛系统做出了以下修改：
+
+- 删去了身份验证的功能，因为默认能登入系统的用户身份都已经得到了验证。
+- 删去举报不良内容的功能，因为有额外的Report System系统能做这件事。
+- 因为没有了身份验证和不良内容举报功能，故而校园管理员的用户身份即不参与本系统。
+- 将View Forum Page功能再特化为View Column和View Columns和View Comments
+
+<img src='img/Forum System.png' width='70%'/>
 
 
 
-### 4.6 Updated System :  Report & Censor System
+### 4.2 Garden Update System
+
+The garden update system is modified as follows:
+
+- This system combines the original Garden Maintenance System and Garden Create&Modify&Dismiss System, merging the four functions of Maintenance, Create, Modify, and Dismiss into a single feature called Garden Update Apply.
+
+- This system inherits the functionality of the original two systems, which include campus administrators publishing volunteer recruitment information, rewarding volunteers, and allowing students to participate in volunteer activities.
+
+花园更新系统做出了以下修改：
+
+- 本系统是将原系统的Garden Maintenance System和Garden Create&Modify&Dismiss System融合到了一起，即将Maintenance, Create, Modify, Dismiss四大功能融合成了一个Garden Update Apply功能。
+- 本系统继承了原本两个系统的校园管理员发布志愿者招募信息+奖励志愿者，以及学生参与志愿活动的功能。
+
+<img src='img/Garden Update System.png' width='70%'/>
 
 
+
+### 4.3 Garden View System
+
+In order to provide more accurate semantics, this system is named "Garden View System" to replace the original system name "Visit System".
+
+- This system specializes the original "View Garden" function into two features: "View Garden Scores" and "View Garden Comments".
+- The reporting functionality for inappropriate content has been removed from this system. As a result, the role of campus administrators becomes ineffective as there is no longer a need to review reported content.
+- The user authentication function has been removed from this system, as users who can log into the system are assumed to have legal identities by default.
+
+为了使得语义更准确，本系统以"Garden View System"为名，以替换原本的系统名"Visit System"。
+
+- 本系统将原本的View Garden功能特化成了两个功能View Garden Scores和View Garden Comments
+- 本系统删除了原系统的不良内容举报功能，由于不需要审核不良内容了，于是此处校园管理员的功能也就失效了。
+- 本系统删去了用户身份验证功能，因为能登入系统的用户默认身份为合法的。
+
+<img src='img/Garden View System.png' width='70%'/>
+
+
+
+### 4.4 Report System
+
+This is a newly added system that allows student users to report inappropriate content to campus administrators. The specific process is as follows:
+
+- Student users view the comments section of the Forum System or the Garden View System.
+- Students identify inappropriate content and report it.
+- Campus administrators review the reported content.
+- Campus administrators decide whether to delete the inappropriate content based on the situation.
+- Campus administrators communicate the outcome of their handling to the student users.
+
+此为新添加的系统，用于学生用户向校园管理人员举报不良内容，具体流程为：
+    4.1.学生用户查看Forum System或者Garden View System评论区内容
+    4.2.学生发现不良内容，并举报
+    4.3.校园管理人员查看举报内容
+    4.4.校园管理人员视情况选择删除不良内容
+    4.5.将校园管理人员处理结果发送给学生用户
+
+<img src='img/Report System.png' width='70%'/>
 
 
 
@@ -235,7 +460,7 @@ By adopting the MVC architecture, we can achieve a clear separation of concerns,
 
 ## 5. List of References
 
-This section lists some of the references that can be used for further information and guidance on the software requirements specification.
+This section lists some of the references that can be used for further information and guidance on the software requirements specification. In addition, this section presents some UML diagram drawing tutorials, including class diagrams, robustness diagrams, and sequence diagrams, that we have used as references. With the help of these resources, we have accomplished the analysis and design of the "Sharing Garden" project and created various UML diagrams required throughout the development process.
 
 - Smith, J. (2019). "Introduction to Software Architecture." Medium. [Online]. Available: https://medium.com/@johndoe/introduction-to-software-architecture-123456789. 
 - Zhang, L. (2021). "UML Class Diagrams: A Comprehensive Guide." Towards Data Science. [Online]. Available: https://towardsdatascience.com/uml-class-diagrams-a-comprehensive-guide-f27f5923c2c8. 
@@ -243,8 +468,11 @@ This section lists some of the references that can be used for further informati
 - Tutorialspoint. "Software Architecture and Design." [Online]. Available: https://www.tutorialspoint.com/software_architecture_design/index.htm. 
 -  https://zhuanlan.zhihu.com/p/78244242
 -  https://zhuanlan.zhihu.com/p/109655171
+-  https://design-patterns.readthedocs.io/zh_CN/latest/read_uml.html
+-  https://juejin.cn/post/6965684798174167076
+-  https://zhuanlan.zhihu.com/p/74243228
 
-本节列出了一些可以用于进一步了解和指导软件需求规格的参考文献。
+本节列出了一些可以用于进一步了解和指导软件需求规格的参考文献。此外，本节还展示了一些我们参考的类图、鲁棒图、时序图等UML图绘画教程博客。基于这些参考资料，我们完成了“Sharing Garden”项目的分析与设计，并画出了开发过程中需要的各类UML图。
 
 <div STYLE="page-break-after: always;"></div>
 

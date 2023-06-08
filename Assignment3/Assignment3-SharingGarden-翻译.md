@@ -101,21 +101,24 @@ In order to provide more accurate semantics, this system is named "Garden View S
 
 ### 3.1 Platform-dependent Architecture
 
-【需要几张微服务架构示例图】
-
 In the previous design of the Sharing Garden project's logical architecture, our focus was on ensuring the system's internal functions' integrity and data transmission security. By combining the actual technical and physical models, we decided to enhance and upgrade the logical architecture of the system using a microservice architecture system based on domain-driven design.
 
-The decision to transition from a layered architecture to a microservice architecture in this project was driven by several reasons. Firstly, the services provided by the Keizai community exchange platform are relatively complete and independent, allowing us to package them into different microservice clusters for utilization by other systems. This modular approach improves reusability and interoperability.
+The decision to transition from a layered architecture to a microservice architecture in this project was driven by several reasons. 
 
-Secondly, microservice development offers flexibility and supports fast iteration, enabling rapid updates and enhancements. With microservices, individual services can be developed and deployed independently, leading to increased agility in the development process. This allows for faster iterations and the ability to respond quickly to changing requirements.
+- Firstly, the services provided by the Keizai community exchange platform are relatively complete and independent, allowing us to package them into different microservice clusters for utilization by other systems. This modular approach improves reusability and interoperability.
 
-Another advantage of microservice architecture lies in the high cohesion within services and loose coupling between them. Each microservice focuses on a specific business capability and can be independently developed, deployed, and scaled. This loose coupling ensures that changes made to one microservice do not impact the entire system, making maintenance and scalability easier.
+- Secondly, microservice development offers flexibility and supports fast iteration, enabling rapid updates and enhancements. With microservices, individual services can be developed and deployed independently, leading to increased agility in the development process. This allows for faster iterations and the ability to respond quickly to changing requirements.
+
+- Another advantage of microservice architecture lies in the high cohesion within services and loose coupling between them. Each microservice focuses on a specific business capability and can be independently developed, deployed, and scaled. This loose coupling ensures that changes made to one microservice do not impact the entire system, making maintenance and scalability easier.
 
 Considering these characteristics of microservice architecture, and after careful evaluation of its pros and cons compared to traditional layered architecture, we made the decision to generalize and refine the previous architecture's layers appropriately. This approach allows us to design a system architecture with complete internal functionality, high security, and lightweight characteristics. The result is a logical architecture diagram that embodies these goals and serves as the foundation for the improved community exchange platform.
+
+Based on the aforementioned characteristics of microservice architecture and a thorough evaluation of its advantages and disadvantages compared to traditional layered architecture, we propose a refined logical architecture to achieve a system design that encompasses comprehensive internal functionality, high security, and lightweight attributes. The diagram of the logical architecture is demonstrated below.
 
 在之前的关系花园项目逻辑架构设计中，我们注重系统内部功能的完整性和数据传输的安全性，并结合实际技术和物理模型的设计，我们选择使用基于领域驱动设计的微服务架构系统来完成系统逻辑架构的改进和升级。
 
 选择从分层架构过渡到微服务架构的原因如下：
+
 1. 经济社区交流平台提供的服务相对完整且独立，可以将其打包成不同的微服务集群供其他系统使用。这种模块化的方法提高了可重用性和互操作性。
 
 2. 微服务开发具有灵活性，支持快速迭代，能够快速更新和增强。通过微服务，各个服务可以独立开发和部署，提高了开发过程中的灵活性，使得迭代更快、能够快速响应需求变化。
@@ -124,13 +127,472 @@ Considering these characteristics of microservice architecture, and after carefu
 
 考虑到微服务架构的上述特点，并在权衡了微服务架构与传统分层架构的优缺点后，我们选择对之前的架构进行适当的泛化和细化。这种方法使我们能够设计一个具有完整内部功能、高安全性和轻量级特性的系统架构。结果是一个体现这些目标并成为改进的社区交流平台基础的逻辑架构图。
 
+基于上述微服务架构的特点，并对微服务架构与传统分层架构的利弊进行全面权衡后，我们提出了一种经过精细调整的逻辑架构，以实现系统设计的完整内部功能、高安全性和轻量级特性。
+
+<img src="img/3.1.2.png" width='70%'/>
+
+Based on the above logical architecture, to adapt the microservices architecture to the project scale, we adopt a separate front-end and back-end development approach. The front-end development utilizes libraries such as Vue and Flutter, while the back-end development is generally done using SpringBoot and SpringCloud. Communication between the front-end and back-end occurs through REST-style API calls and JSON data files. Different layers communicate and convert data through various data models (e.g., VO, DTO, DO). The system employs sa-token for authorization and authentication, ELK for comprehensive log collection and data analysis visualization, and activeMQ message queues to effectively handle asynchronous messages and traffic clipping. The back-end exchanges data with an Oracle database or Redis cache using Hibernate's persistence mechanism. The system accounts for the high request traffic of a ticketing system in a short time and implements request traffic reduction using funnels. During the business flow, each layer performs business verification and filtering to ensure account security, purchase eligibility, and the normal status of basic information like theaters and cinemas. The system also verifies the normal status of goods to be purchased and checks for the completion of time-limited offers. Illegal requests are filtered out at each level, processing only valid requests at the final stage, thus reducing the write operation traffic from requests to the database. Cache expiration length control is implemented, with VO objects and DO objects of underlying data entities using different expiration length policies based on static or dynamic data. The final design of the development architecture is as follows:
+
+1. Separate front-end and back-end development: Front-end development using Vue, Flutter, and other libraries; back-end development using SpringBoot and SpringCloud.
+2. Communication via REST API and JSON: Front-end and back-end communicate through REST API and JSON.
+3. Authorization and authentication: Implementation of authorization and authentication using sa-token.
+4. Log collection and data analysis visualization: Comprehensive log collection and data analysis visualization using ELK.
+5. Asynchronous message handling: Utilization of activeMQ message queues for asynchronous message delivery and storage.
+6. Data exchange: Back-end exchanges data with an Oracle database or Redis cache using Hibernate's persistence mechanism.
+7. Request traffic reduction: Implementation of traffic reduction using funnels to handle high request traffic.
+8. Filtering illegal requests: Business flow includes verification and filtering of illegal requests at each layer.
+9. Cache expiration length control: Different expiration length policies for VO and DO objects based on static or dynamic data.
+
+Based on the aforementioned architecture design, the final development architecture is as described below.
+
+根据上述逻辑架构，为了适应项目规模，我们采用前后端分离开发。前端使用Vue、Flutter等库，后端使用SpringBoot和SpringCloud。前后端通过REST API和JSON数据进行通信。系统实现授权和身份验证，日志收集和数据分析可视化，异步消息处理使用activeMQ消息队列。后端通过Hibernate与Oracle数据库或Redis缓存交换数据。系统考虑到高请求流量，使用漏斗进行流量调节。业务链路逐层过滤非法请求，确保只处理有效请求。缓存过期时间控制根据数据类型进行设置。最终的开发架构如下：
+
+1. 前后端分离开发：使用Vue、Flutter等库进行前端开发，使用SpringBoot和SpringCloud进行后端开发。
+2. REST API和JSON数据通信：前后端通过REST API和JSON数据进行通信。
+3. 授权和身份验证：系统实现授权和身份验证。
+4. 日志收集和数据分析可视化：使用ELK进行完整的日志收集和数据分析可视化。
+5. 异步消息处理：使用activeMQ消息队列进行异步消息传递和存储。
+6. 数据交换：后端使用Hibernate与Oracle数据库或Redis缓存进行数据交换。
+7. 请求流量调节：使用漏斗进行请求流量调节。
+8. 非法请求过滤：业务链路逐层过滤非法请求。
+9. 缓存过期时间控制：根据数据类型设置缓存过期时间。
+
+根据上述架构设计，最终的开发架构如上所述。
+
+<img src="img/3.1.1.png" width='70%'/>
+
+
+
+To depict the physical implementation of the system, a deployment diagram is used to illustrate the mapping between the logical and physical architecture. Leveraging the microservice architecture, the system employs a cluster of service registries and configuration centers, along with three clusters of servers with distinct functions to facilitate intercommunication among microservices.
+
+为了展现系统的物理实现，使用部署图来说明逻辑架构与物理架构之间的映射关系。借助微服务架构，系统采用了一组服务注册中心和配置中心，以及三个具有不同功能的服务器集群，以促进微服务之间的相互通信。
+
+<img src="img/3.1.3.png" width='70%'/>
+
+
+
 ### 3.2 Subsystems and Interfaces
+
+#### 3.2.1 Login & Register System
+
+**Interface Class: AccountManagement**
+
+- Interface Functions:
+  - getUserID(): userID [Get user ID]
+  - getRegisterStatus(userID): registerStatus [Get registration status]
+  - login(userID, password): bool [User login]
+  - logout(userID): bool [User logout]
+  - updateAccountInfo(userID, newInfo): bool [Update account information]
+
+**Interface Class: Registration**
+
+- Interface Functions:
+  - getAccountInfo(userID): accountInfo [Get user account information]
+  - checkUsernameAvailability(username): bool [Check username availability]
+  - register(userID, password, email): userID [User registration]
+  - confirmEmail(userID): bool [Confirm email]
+
+**Interface Class: PasswordManagement**
+
+- Interface Functions:
+  - changePassword(userID, oldPassword, newPassword): bool [Change password]
+  - resetPassword(userID, email): bool [Reset password]
+  - getPasswordStrength(password): passwordStrength [Get password strength]
+
+**Interface Class: SecurityQuestions**
+
+- Interface Functions:
+  - getSecurityQuestions(userID): securityQuestions [Get security questions]
+  - answerSecurityQuestions(userID, answers): bool [Answer security questions]
+  - updateSecurityQuestions(userID, newQuestions, newAnswers): bool [Update security questions and answers]
+
+**Dependent External Interface Classes:**
+
+- External Email API
+- Notification API
+
+
+
+#### 3.2.2 Forum System
+
+**Interface Class: Forum**
+
+- Interface Functions:
+  - getForumList(): forum list [Get forum list]
+  - showForumInfo(forumID): info [Get detailed information of a forum]
+  - sortForumByActivity(): forum list [Sort forums by activity]
+  - sortForumByLatestColumn(): forum list [Sort forums by the latest posts]
+  - chooseForum(forumID): forum_choice [Choose a forum]
+  - sendForumChoice(forum_choice): bool [Send the selected forum]
+
+**Interface Class: Column**
+
+- Interface Functions:
+  - showColumnList(forumID): column list [Get the list of posts in a forum]
+  - chooseColumn(forumID, columnID): column_choice [Choose a post]
+  - sendColumnChoice(column_choice): bool [Send the selected post]
+  - createColumn(forumID, userId, title, content): columnId [Create a new post]
+  - deleteColumn(forumID, userId, columnId): bool [Delete a post]
+
+**Interface Class: Comment**
+
+- Interface Functions:
+  - showCommentList(columnID): comment list [Get the list of comments under a post]
+  - createComment(columnID, userId, content): commentId [Create a new comment]
+  - deleteComment(columnID, userId, commentId): bool [Delete a comment]
+
+**Dependent External Interface Classes:**
+
+- User Information API
+- Date and Time API
+- Notification API (for notifications of new posts, comments, etc.)
+
+
+
+#### 3.2.3 Garden Update System
+
+**Interface Class: Garden**
+
+- Interface Functions:
+  - getGardenList(user_pos): garden list [Get the list of gardens]
+  - showGardenInfo(gardenID): info [Get detailed information of a garden]
+  - sortGardenBySize(): garden list [Sort gardens by size]
+  - sortGardenByPopularity(): garden list [Sort gardens by popularity]
+  - chooseGarden(gardenID): garden_choice [Choose a garden]
+  - sendGardenChoice(garden_choice): bool [Send the selected garden]
+
+**Interface Class: UpdateRequest**
+
+- Interface Functions:
+  - showRequestList(gardenID): request list [Display the list of update requests for a garden]
+  - chooseRequest(requestID): request_choice [Choose an update request]
+  - sendRequestChoice(request_choice): bool [Send the selected request]
+
+**Interface Class: Volunteer**
+
+- Interface Functions:
+  - createApplication(userId, garden_choice, request_choice): applicationID [Create a volunteer application]
+  - applicationApproved(applicationID): bool [Send application approval message to the volunteer subsystem]
+  - applicationDenied(applicationID): bool [Send application rejection message to the volunteer subsystem]
+
+**Dependent External Interface Classes:**
+
+- User Information API
+- Location Information API (for displaying garden locations)
+- Notification API (for application result notifications)
+
+
+
+#### 3.2.4 Report System
+
+**Interface Class: Report**
+
+- Interface Functions:
+  - showPostID(): PostID [Get post ID]
+  - getPostContent(PostID): content [Get post content]
+  - createReport(userID, PostID): reportID [Create a report]
+  - sendReport(reportID): bool [Send the report]
+
+**Interface Class: UserFeedback**
+
+- Interface Functions:
+  - getUserReportStatus(userID): reportStatus [Get user report status]
+  - getReportList(userID): report list [Get user's report list]
+  - chooseReport(reportID): report_choice [Choose a report to view]
+  - getUserConsent(): bool [Get user's consent]
+
+**Interface Class: AdminReview**
+
+- Interface Functions:
+  - getReportInfo(reportID): reportInfo [Get report information]
+  - sendReviewResult(reportID): void [Send review result to the user]
+  - checkReviewSuccess(): bool [Check if the review is successful]
+
+**Interface Class: PostManagement**
+
+- Interface Functions:
+  - showPostInfo(postID): postInfo [Get post information]
+  - deletePost(postID): bool [Delete post]
+  - checkDeleteSuccess(): bool [Check if the deletion is successful]
+
+**Dependent External Interface Classes:**
+
+- User Information API
+- Notification API (for sending review result notifications)
+
+
+
+#### 3.2.5 Garden View System
+
+**Interface Class: Garden**
+
+- Interface Functions:
+  - showGardenID(): gardenID [Get garden ID]
+  - getGardenList(): garden list [Get list of gardens]
+  - showGardenInfo(gardenID): garden info [Get garden information]
+  - getGardenRating(gardenID): rating [Get garden rating]
+  - chooseGarden(gardenID): garden_choice [Choose a garden]
+  - sendGardenChoice(garden_choice): bool [Send the selected garden]
+
+**Interface Class: UserInteraction**
+
+- Interface Functions:
+  - getUserStatus(userID): userStatus [Get user status]
+  - getUserComment(userID, gardenID): comment [Get user's comment on a garden]
+  - chooseCommentOption(comment_option): comment_choice [Choose to comment or rate]
+  - sendCommentOrRating(comment_or_rating): bool [Send comment or rating]
+
+**Interface Class: AdminManagement**
+
+- Interface Functions:
+  - getCommentList(gardenID): comment list [Get list of comments for a garden]
+  - sendCommentApproval(commentID): void [Send comment approval result to the user]
+  - checkApprovalSuccess(): bool [Check if the approval is successful]
+
+**Interface Class: ScoreManagement**
+
+- Interface Functions:
+  - getScoreInfo(gardenID): score info [Get garden rating information]
+  - recalculateScore(gardenID): bool [Recalculate garden rating]
+  - checkRecalculateSuccess(): bool [Check if the recalculation is successful]
+
+**Dependent External Interface Classes:**
+
+- User Information API
+- Location Information API (for displaying garden location)
+
+
+
+#### 3.2.6 Forum System Database
+
+- Interface Class: ForumDB
+
+- Interface Functions: 
+
+  - createColumn(userID, columnContent): bool - Create a column 
+  - getColumnInfo(columnID): columnInfo - Get column information 
+  - deleteColumnInfo(columnID): bool - Delete column information 
+  - updateColumnInfo(columnID, newColumnContent): bool - Update column information
+
+  
+
+#### 3.2.7 Login & Register System Database
+
+- Interface Class: AuthenticationDB
+
+- Interface Functions: 
+  - createUserAccount(accountInfo): bool - Create a user account 
+  - getUserAccountInfo(userID): accountInfo - Get user account information 
+  - deleteUserAccount(userID): bool - Delete user account 
+  - updateUserAccount(userID, newAccountInfo): bool - Update user account information
+
+
+
+#### 3.2.8 Garden Update System Database
+
+- Interface Class: GardenDB
+
+- Interface Functions: 
+  - addGardenInfo(newGarden): bool - Add garden information 
+  - getGardenInfo(gardenID): gardenInfo - Get garden information 
+  - deleteGardenInfo(gardenID): bool - Delete garden information 
+  - updateGardenInfo(gardenID, newGarden): bool - Update garden information
+
+
+
+#### 3.2.9 Report System Database
+
+- Interface Class: ReportDB
+
+- Interface Functions: 
+
+  - createReport(reportContent): bool - Create a report 
+  - getReportInfo(reportID): reportInfo - Get report information 
+  - deleteReportInfo(reportID): bool - Delete report information 
+  - updateReportStatus(reportID, reportStatus): bool - Update report status
+
+  
+
+#### 3.2.10 Garden View System Database
+
+- Interface Class: ViewDB
+
+- Interface Functions: 
+
+  - createUserRating(userID, gardenID, rating): bool - Add user rating 
+  - getUserRatingInfo(ratingID): ratingInfo - Get user rating information 
+  - deleteUserRatingInfo(ratingID): bool - Delete user rating information 
+  - updateUserRatingInfo(ratingID, newRating): bool - Update user rating information
+
+  
 
 ### 3.3 Interface Specification
 
-### 3.4 Subsystem Interfaces Example
+#### 3.3.1 Login & Register Framework
+
+Before accessing the features of the Sharing Garden project, users are required to authenticate their login credentials due to restricted access to various operational interfaces. Login authentication is a prerequisite for executing operations that necessitate login permission. The sa-token framework offers interfaces to inquire about login status and token information parameters, allowing seamless integration with other interfaces to facilitate corresponding operations.
+
+| API Interface        | Method | Parameters                                         | Description                                                  |
+| -------------------- | ------ | -------------------------------------------------- | ------------------------------------------------------------ |
+| `/login`             | POST   | `username`, `password`                             | Handles user login authentication.                           |
+| `/logout`            | POST   | None                                               | Logs out the currently logged-in user.                       |
+| `/user/info`         | GET    | None                                               | Retrieves information about the logged-in user.              |
+| `/user/update`       | POST   | User profile data (e.g., `name`, `email`, `phone`) | Updates the user's profile information.                      |
+| `/token/validate`    | POST   | `token`                                            | Validates the authenticity and validity of a token.          |
+| `/token/refresh`     | POST   | `refresh_token`                                    | Refreshes an expired token to extend its validity.           |
+| `/token/revoke`      | POST   | `token`                                            | Revokes a token, rendering it invalid.                       |
+| `/token/generate`    | POST   | `user_id`, `expiration`, `custom_data`             | Generates a new token for a specified user with optional parameters. |
+| `/token/decode`      | POST   | `token`                                            | Decodes a token to retrieve its payload information.         |
+| `/permission/check`  | POST   | `user_id`, `permission`                            | Checks if a user has a specific permission.                  |
+| `/permission/grant`  | POST   | `user_id`, `permission`                            | Grants a user a specific permission.                         |
+| `/permission/revoke` | POST   | `user_id`, `permission`                            | Revokes a specific permission from a user.                   |
+| `/role/assign`       | POST   | `user_id`, `role`                                  | Assigns a role to a user.                                    |
+| `/role/revoke`       | POST   | `user_id`, `role`                                  | Revokes a role from a user.                                  |
+| `/role/permissions`  | GET    | `role`                                             | Retrieves the permissions associated with a role.            |
+| `/role/users`        | GET    | `role`                                             | Retrieves the users assigned to a specific role.             |
+
+#### 3.3.2 Map Interface
+
+In the Sharing Garden Project, we need to provide users with a map system for their respective universities. This will allow users to search for garden locations, select available areas, and perform route queries on the map. Therefore, we have chosen Baidu Map as the third-party system, and its API interfaces are shown in the following table.
+
+| API Interface        | Method | Parameters                                             | Description                                                  |
+| -------------------- | ------ | ------------------------------------------------------ | ------------------------------------------------------------ |
+| `/geocoding`         | GET    | `address`                                              | Performs geocoding to convert addresses to coordinates.      |
+| `/reverse_geocoding` | GET    | `location`                                             | Performs reverse geocoding to convert coordinates to addresses. |
+| `/direction`         | GET    | `origin`, `destination`, `waypoints`                   | Retrieves the direction and route information between locations. |
+| `/place_search`      | GET    | `query`, `location`, `radius`, `filters`               | Searches for places or points of interest based on specified criteria. |
+| `/place_detail`      | GET    | `place_id`                                             | Retrieves detailed information about a specific place or POI. |
+| `/distance_matrix`   | GET    | `origins`, `destinations`                              | Calculates the distance and duration between multiple coordinates. |
+| `/geolocation`       | GET    | None                                                   | Retrieves the location information based on the user's IP or network. |
+| `/staticmap`         | GET    | `center`, `zoom`, `width`, `height`, `markers`, `path` | Generates a static map image with specified parameters.      |
+| `/direction_walk`    | GET    | `origin`, `destination`                                | Retrieves walking route information between locations.       |
+| `/direction_transit` | GET    | `origin`, `destination`                                | Retrieves public transit route information between locations. |
+| `/direction_drive`   | GET    | `origin`, `destination`                                | Retrieves driving route information between locations.       |
+| `/geocoder_ip`       | GET    | None                                                   | Retrieves geolocation information based on the user's IP address. |
+| `/suggestion`        | GET    | `keyword`, `region`                                    | Provides place suggestions based on user input and region.   |
+| `/geotable_create`   | POST   | `geotable_name`                                        | Creates a geotable to store custom data in Baidu Map.        |
+| `/geotable_detail`   | GET    | `geotable_id`                                          | Retrieves detailed information about a specific geotable.    |
+| `/geotable_list`     | GET    | None                                                   | Retrieves a list of geotables associated with the user's account. |
+| `/geotable_update`   | POST   | `geotable_id`, `geotable_name`                         | Updates the name of a specific geotable.                     |
+| `/geotable_delete`   | POST   | `geotable_id`                                          | Deletes a specific geotable.                                 |
 
 
+
+### 3.4 Forum Subsystem Interface Explanation
+
+The Forum System is a forum subsystem that integrates three sub-interfaces: Forum, Column, and Comment. Users can use the Forum-related interface functions to retrieve the forum list, obtain information about a specific forum, choose a specific forum, and perform other operations. In the Column-related interface functions, users can get the list of posts within a forum, choose to view a specific post, send their selected post, create new posts, or delete existing posts. In the Comment-related interface functions, users can view the comment list under a specific post, create new comments, or delete existing comments. In the Forum System, users can interact with the system at the forum, post, and comment levels, improving the overall usability and scalability of the system.
+
+#### 3.4.1. Interface Class: Forum
+
+<img src="img/3.4.1.1.png" width="30%"/>
+
+<img src="img/3.4.1.2.png" width="30%"/>
+
+The methods used in this interface class are as follows: 
+
+- getForumList(): forum list - Get the list of forums 
+- showForumInfo(forumID): info - Get detailed information about a specific forum 
+- sortForumByActivity(): forum list - Sort the forums by activity 
+- sortForumByLatestColumn(): forum list - Sort the forums by the latest 
+- post chooseForum(forumID): forum_choice - Choose a forum 
+- sendForumChoice(forum_choice): bool - Send the chosen forum
+
+The relationship table forumInfo stored in the database, which is used by this interface class, contains the following attributes: 
+
+- forumID: string - Forum ID 
+- forumName: string - Forum name 
+- forumDescription: string - Forum description 
+- forumColumnList: list<Column> - List of columns in the forum 
+- forumActivity: int - Forum activity, e.g., number of posts or comments 
+- forumLatestColumnTime: Time - Time of the latest post in the forum
+
+Usage instructions for this interface class: This is the interface for forum operations in the forum subsystem, and it has six functions that can be called externally:
+
+A. getForumList(): forum list - Get the list of forums This method returns the list of forums in the entire forum system.
+
+B. showForumInfo(forumID): info - Get detailed information about a specific forum Based on the given forum ID, this method returns detailed information about the forum, such as the forum name, description, activity level, and the time of the latest post.
+
+C. sortForumByActivity(): forum list - Sort the forums by activity This method returns the list of forums sorted by activity level (e.g., number of posts or comments).
+
+D. sortForumByLatestColumn(): forum list - Sort the forums by the latest post This method returns the list of forums sorted by the time of the latest post.
+
+E. chooseForum(forumID): forum_choice - Choose a forum Users can choose a forum by using this method, which returns the information of the chosen forum.
+
+F. sendForumChoice(forum_choice): bool - Send the chosen forum After selecting a forum, users can send their selection using this method. It returns true if the selection is successfully sent, otherwise false.
+
+When using this interface class, you can first retrieve the information of the entire forum using functions like getForumList, and then users can choose a specific forum using chooseForum and send their choice using sendForumChoice to perform subsequent operations within the subsystem, such as displaying detailed information about the selected forum.
+
+
+
+#### 3.4.2. Interface Class: Column
+
+<img src="img/3.4.2.1.png" width="30%"/>
+
+<img src="img/3.4.2.2.png" width="30%"/>
+
+The methods used in this interface class are as follows: 
+
+- showColumnList(forumID): column list - Get the list of posts within a 
+- forum chooseColumn(forumID, columnID): column_choice - Choose a 
+- post sendColumnChoice(column_choice): bool - Send the chosen post 
+- createColumn(forumID, userID, title, content): ColumnID - Create a 
+- new post deleteColumn(forumID, userID, columnID): bool - Delete a post
+
+The relationship table columnInfo stored in the database, which is used by this interface class, contains the following attributes: 
+
+- columnID: string - Post ID 
+- forumID: string - Forum ID of the post 
+- userID: string - User ID of the post creator 
+- title: string - Post title 
+- content: string - Post content 
+- timeColumned: Time - Time of posting 
+- comments: list<Comment> - List of comments on the post
+
+Usage instructions for this interface class: This is the interface for post operations in the forum subsystem, and it has five functions that can be called externally:
+
+A. showColumnList(forumID): column list - Get the list of posts within a forum This method returns the list of posts within a specific forum based on the given forum ID.
+
+B. chooseColumn(forumID, columnID): column_choice - Choose a post Users can choose a specific post within a forum using this method, which returns the information of the chosen post.
+
+C. sendColumnChoice(column_choice): bool - Send the chosen post After selecting a post, users can send their choice using this method. It returns true if the selection is successfully sent, otherwise false.
+
+D. createColumn(forumID, userID, title, content): columnID - Create a new post Users can create a new post within a specified forum using this method. They need to provide the user ID, post title, and post content. If the creation is successful, it returns the ID of the new post.
+
+E. deleteColumn(forumID, userID, columnID): bool - Delete a post Users can delete a post they have created using this method. It returns true if the deletion is successful, otherwise false.
+
+When using this interface class, you can first retrieve the post information of a specific forum using functions like showColumnList. Users can choose a specific post using chooseColumn and send their choice using sendColumnChoice to perform subsequent operations within the subsystem, such as displaying detailed information about the selected post or the comment list. Users can also create and delete posts using createColumn and deleteColumn, respectively.
+
+
+
+#### 3.4.3. Interface Class: Comment
+
+<img src="img/3.4.3.1.png" width="30%"/>
+
+<img src="img/3.4.3.2.png" width="30%"/>
+
+The methods used in this interface class are as follows: 
+
+- showCommentList(columnID): comment list - Get the list of comments under a post 
+- createComment(columnID, userID, content): commentID - Create a new comment 
+- deleteComment(columnID, userID, commentID): bool - Delete a comment
+
+The attributes of the commentInfo relationship table stored in the database, which is used by this interface class, are as follows: 
+
+- commentID: string - Comment ID 
+- columnID: string - ID of the post to which the comment belongs 
+- userID: string - User ID of the comment creator 
+- content: string - Comment content 
+- timeColumned: Time - Time of commenting
+
+Usage instructions for this interface class: This is the interface for comment operations in the forum subsystem, and it has three functions that can be called externally:
+
+A. showCommentList(columnID): comment list - Get the list of comments under a post Based on the given post ID, this method returns the list of comments under that post.
+
+B. createComment(columnID, userID, content): commentID - Create a new comment Users can create a new comment under a specific post using this method. They need to provide the user ID and comment content. If the creation is successful, it returns the ID of the new comment.
+
+C. deleteComment(columnID, userID, commentID): bool - Delete a comment Users can delete a comment they have posted using this method. It returns true if the deletion is successful, otherwise false.
+
+When using this interface class, you can first retrieve the comment list of a specific post using the showCommentList function. Users can create new comments using createComment, and when necessary, they can also delete their own comments using deleteComment. This interface class supports the interactivity and user participation in the forum subsystem.
 
 ## 4. Design Models
 
@@ -138,9 +600,9 @@ Considering these characteristics of microservice architecture, and after carefu
 
 #### 4.1.1 Design Model
 
-【要接口的设计模型图】
+The design model below shows the process when the user logs in. In the login page, the user can enter the relevant information and click login, the system will check whether the password is correct, so that the user interface jump or prompt the password error. The registration page requires the user to create an account. The system will check whether the account already exists. If it does not exist, a new account will be created for the user and saved in the database.
 
-
+<img src="img/4.1.png" width='70%'/>
 
 #### 4.1.2 Sequence Diagram
 
@@ -156,7 +618,9 @@ The following sequence diagram illustrates the system's processing flow during u
 
 #### 4.2.1 Design Model
 
+The following design model shows the system process as the user navigates the forum home page. The user can click on the page to display the detailed content, and the system takes out the relevant content from the database for display. Users can click on the next page, the previous page to read the contents of the home page, the system will determine whether there is still the next page or the previous page, so as to choose to display the content of this page or prompt the user that the page does not exist.
 
+<img src="img/4.2.png" width='70%'/>
 
 
 
@@ -178,7 +642,9 @@ The following sequence diagram illustrates the interaction process between a use
 
 #### 4.3.1 Design Model
 
+The following design model shows a situation where a user requests to modify the garden. After the user clicks on the application, the application is submitted to the back-end for review. If the audit is passed, the system prompts that the modification is successful and shows the specific information of the garden before and after the modification to the user, and shows the modified place in detail. If the audit fails, the user application fails to be promoted.
 
+<img src="img/4.3.png" width='70%'/>
 
 
 
@@ -218,7 +684,9 @@ The following sequence diagram illustrates how an administrator reviews a user's
 
 #### 4.4.1 Design Model
 
+This design model shows how a user can view the garden details. The user can click on the garden of interest and the system will return the details of that garden. Users can like, rate and leave comments in the interface, and the system records these actions. The comments will be reviewed by the back-end, if the user can see the posted comments, if the user does not pass the message will also be alerted.
 
+<img src="img/4.4.png" width='70%'/>
 
 
 
@@ -238,7 +706,9 @@ The following sequence diagram illustrates how a user can view detailed informat
 
 #### 4.5.1 Design Model
 
+This design model shows how users report bad content. When the user clicks the report button, the system will send the relevant content to the back-end for review, and the audit result will be returned to the interface to prompt the user after the review. Users can also choose to cancel the report.
 
+<img src="img/4.5.png" width='70%'/>
 
 
 

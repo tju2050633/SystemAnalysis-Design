@@ -1,0 +1,3686 @@
+{
+	"_type": "UMLModel",
+	"_id": "AAAAAAGINIww8x7urrM=",
+	"_parent": {
+		"$ref": "AAAAAAFF+h6SjaM2Hec="
+	},
+	"name": "Sharing Garden System Architecture",
+	"ownedElements": [
+		{
+			"_type": "UMLClassDiagram",
+			"_id": "AAAAAAGINIww9B7vshQ=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Sharing Garden System Architecture",
+			"ownedViews": [
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINPB0XCpgPnc=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 136,
+					"top": 168,
+					"width": 1353,
+					"height": 1370
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLuRhil+iec=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 1352,
+					"width": 953,
+					"height": 153
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLXvhyjrG9A=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 1152,
+					"top": 240,
+					"width": 305,
+					"height": 1265
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLPquijjj9g=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 240,
+					"width": 953,
+					"height": 185
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLMQ3yfN7X4=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 456,
+					"width": 953,
+					"height": 177
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLKIryehXSI=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 664,
+					"width": 953,
+					"height": 209
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINLCg+ydlr08=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 904,
+					"width": 953,
+					"height": 209
+				},
+				{
+					"_type": "RectangleView",
+					"_id": "AAAAAAGINK5Vfic9AT8=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 168,
+					"top": 1144,
+					"width": 953,
+					"height": 177
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINJfHYCHlE0E=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJfHYCHjeAM="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJfHYCHmgjg=",
+							"_parent": {
+								"$ref": "AAAAAAGINJfHYCHlE0E="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJfHYCHjeAM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJfHYCHncTc=",
+									"_parent": {
+										"$ref": "AAAAAAGINJfHYCHmgjg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 192,
+									"top": 256,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJfHYCHoFGk=",
+									"_parent": {
+										"$ref": "AAAAAAGINJfHYCHmgjg="
+									},
+									"font": "Arial;13;1",
+									"left": 273,
+									"top": 543,
+									"width": 181.6953125,
+									"height": 13,
+									"underline": true,
+									"text": "Data unpacking component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJfHYCHpafU=",
+									"_parent": {
+										"$ref": "AAAAAAGINJfHYCHmgjg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 192,
+									"top": 256,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJfHYCHq7Js=",
+									"_parent": {
+										"$ref": "AAAAAAGINJfHYCHmgjg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 192,
+									"top": 256,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 268,
+							"top": 536,
+							"width": 191.6953125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJfHYCHncTc="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJfHYCHoFGk="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJfHYCHpafU="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJfHYCHq7Js="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 248,
+					"top": 536,
+					"width": 211.6953125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJfHYCHmgjg="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINJf34SH/isc=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJf34SH9VlY="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJf34SIABpA=",
+							"_parent": {
+								"$ref": "AAAAAAGINJf34SH/isc="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJf34SH9VlY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJf34SIBeAY=",
+									"_parent": {
+										"$ref": "AAAAAAGINJf34SIABpA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": 224,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJf34SICg8g=",
+									"_parent": {
+										"$ref": "AAAAAAGINJf34SIABpA="
+									},
+									"font": "Arial;13;1",
+									"left": 849,
+									"top": 543,
+									"width": 204.724609375,
+									"height": 13,
+									"underline": true,
+									"text": "Data encapsulation component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJf34SIDBJM=",
+									"_parent": {
+										"$ref": "AAAAAAGINJf34SIABpA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": 224,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJf34SIETxw=",
+									"_parent": {
+										"$ref": "AAAAAAGINJf34SIABpA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": 224,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 844,
+							"top": 536,
+							"width": 214.724609375,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJf34SIBeAY="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJf34SICg8g="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJf34SIDBJM="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJf34SIETxw="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 824,
+					"top": 536,
+					"width": 234.724609375,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJf34SIABpA="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINJmpfiJWLCU=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJmpfiJX2+E=",
+							"_parent": {
+								"$ref": "AAAAAAGINJmpfiJWLCU="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJmpfiJUZiY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJmpfiJYzOE=",
+									"_parent": {
+										"$ref": "AAAAAAGINJmpfiJX2+E="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJmpfiJZzu0=",
+									"_parent": {
+										"$ref": "AAAAAAGINJmpfiJX2+E="
+									},
+									"font": "Arial;13;1",
+									"left": 429,
+									"top": 710,
+									"width": 647,
+									"height": 13,
+									"text": "Business Interface"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJmpfiJaTiA=",
+									"_parent": {
+										"$ref": "AAAAAAGINJmpfiJX2+E="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJmpfiJbLUo=",
+									"_parent": {
+										"$ref": "AAAAAAGINJmpfiJX2+E="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 424,
+							"top": 703,
+							"width": 657,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJmpfiJYzOE="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJmpfiJZzu0="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJmpfiJaTiA="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJmpfiJbLUo="
+							}
+						}
+					],
+					"containedViews": [
+						{
+							"$ref": "AAAAAAGINKWFAyQzBgI="
+						},
+						{
+							"$ref": "AAAAAAGINKWLniRMsbI="
+						},
+						{
+							"$ref": "AAAAAAGINKWRaSRlCks="
+						},
+						{
+							"$ref": "AAAAAAGINKmgsSYAlm4="
+						},
+						{
+							"$ref": "AAAAAAGINKWquiSw7kw="
+						},
+						{
+							"$ref": "AAAAAAGINKWY/CR+UL8="
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 424,
+					"top": 688,
+					"width": 657,
+					"height": 161,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJmpfiJX2+E="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINKGN0yMf4DM=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKGN0yMdiSI="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKGN0yMgW2c=",
+							"_parent": {
+								"$ref": "AAAAAAGINKGN0yMf4DM="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKGN0yMdiSI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKGN0yMhwug=",
+									"_parent": {
+										"$ref": "AAAAAAGINKGN0yMgW2c="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 160,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKGN0yMiz/8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKGN0yMgW2c="
+									},
+									"font": "Arial;13;1",
+									"left": 225,
+									"top": 1023,
+									"width": 196.96142578125,
+									"height": 13,
+									"underline": true,
+									"text": "Data transmission component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKGN0yMj/84=",
+									"_parent": {
+										"$ref": "AAAAAAGINKGN0yMgW2c="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 160,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKGN0yMkVhY=",
+									"_parent": {
+										"$ref": "AAAAAAGINKGN0yMgW2c="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 208,
+									"top": 160,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 220,
+							"top": 1016,
+							"width": 206.96142578125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKGN0yMhwug="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKGN0yMiz/8="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKGN0yMj/84="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKGN0yMkVhY="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 200,
+					"top": 1016,
+					"width": 226.96142578125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKGN0yMgW2c="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKH1tCM5isg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKH1tCM6RVA=",
+							"_parent": {
+								"$ref": "AAAAAAGINKH1tCM5isg="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKH1tCM35CM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKH1tCM7XKw=",
+									"_parent": {
+										"$ref": "AAAAAAGINKH1tCM6RVA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKH1tCM8Fu0=",
+									"_parent": {
+										"$ref": "AAAAAAGINKH1tCM6RVA="
+									},
+									"font": "Arial;13;1",
+									"left": 429,
+									"top": 950,
+									"width": 647,
+									"height": 13,
+									"text": "Business Implementation"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKH1tCM9NNU=",
+									"_parent": {
+										"$ref": "AAAAAAGINKH1tCM6RVA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKH1tCM+484=",
+									"_parent": {
+										"$ref": "AAAAAAGINKH1tCM6RVA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 736,
+									"top": -80,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 424,
+							"top": 943,
+							"width": 657,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKH1tCM7XKw="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKH1tCM8Fu0="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKH1tCM9NNU="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKH1tCM+484="
+							}
+						}
+					],
+					"containedViews": [
+						{
+							"$ref": "AAAAAAGINKoIrSY7PII="
+						},
+						{
+							"$ref": "AAAAAAGINKoObSZU+8w="
+						},
+						{
+							"$ref": "AAAAAAGINKoVAiZtGSU="
+						},
+						{
+							"$ref": "AAAAAAGINKocAyaGllg="
+						},
+						{
+							"$ref": "AAAAAAGINKoioCafLKQ="
+						},
+						{
+							"$ref": "AAAAAAGINKn6gCYiAW0="
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 424,
+					"top": 928,
+					"width": 657,
+					"height": 161,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKH1tCM6RVA="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINKQ2FCP/UtU=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKQ2FCP9TCI="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKQ2FCQA7go=",
+							"_parent": {
+								"$ref": "AAAAAAGINKQ2FCP/UtU="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKQ2FCP9TCI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKQ2FCQB3Ss=",
+									"_parent": {
+										"$ref": "AAAAAAGINKQ2FCQA7go="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": -64,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKQ2FCQCVIs=",
+									"_parent": {
+										"$ref": "AAAAAAGINKQ2FCQA7go="
+									},
+									"font": "Arial;13;1",
+									"left": 249,
+									"top": 1239,
+									"width": 216.04248046875,
+									"height": 13,
+									"underline": true,
+									"text": "Database connection component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKQ2FCQDctw=",
+									"_parent": {
+										"$ref": "AAAAAAGINKQ2FCQA7go="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": -64,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKQ2FCQEXho=",
+									"_parent": {
+										"$ref": "AAAAAAGINKQ2FCQA7go="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": -64,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 244,
+							"top": 1232,
+							"width": 226.04248046875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKQ2FCQB3Ss="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKQ2FCQCVIs="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKQ2FCQDctw="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKQ2FCQEXho="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 224,
+					"top": 1232,
+					"width": 246.04248046875,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKQ2FCQA7go="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINKSBEiQZOBA=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKSBEiQXkZI="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKSBEiQaP7w=",
+							"_parent": {
+								"$ref": "AAAAAAGINKSBEiQZOBA="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKSBEiQXkZI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKSBEiQb+Z0=",
+									"_parent": {
+										"$ref": "AAAAAAGINKSBEiQaP7w="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 816,
+									"top": -208,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKSBEiQcjog=",
+									"_parent": {
+										"$ref": "AAAAAAGINKSBEiQaP7w="
+									},
+									"font": "Arial;13;1",
+									"left": 545,
+									"top": 1239,
+									"width": 207.44140625,
+									"height": 13,
+									"underline": true,
+									"text": "Database operation component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKSBEiQdsRw=",
+									"_parent": {
+										"$ref": "AAAAAAGINKSBEiQaP7w="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 816,
+									"top": -208,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKSBEiQehrg=",
+									"_parent": {
+										"$ref": "AAAAAAGINKSBEiQaP7w="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 816,
+									"top": -208,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 540,
+							"top": 1232,
+							"width": 217.44140625,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKSBEiQb+Z0="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKSBEiQcjog="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKSBEiQdsRw="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKSBEiQehrg="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 520,
+					"top": 1232,
+					"width": 237.44140625,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKSBEiQaP7w="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINKi4fiXiiIk=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKi4fiXg8Fs="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKi4fiXjhwU=",
+							"_parent": {
+								"$ref": "AAAAAAGINKi4fiXiiIk="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKi4fiXg8Fs="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKi4fiXkrCE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKi4fiXjhwU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 352,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKi4fiXlpDo=",
+									"_parent": {
+										"$ref": "AAAAAAGINKi4fiXjhwU="
+									},
+									"font": "Arial;13;1",
+									"left": 225,
+									"top": 783,
+									"width": 196.96142578125,
+									"height": 13,
+									"underline": true,
+									"text": "Data transmission component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKi4fiXmE40=",
+									"_parent": {
+										"$ref": "AAAAAAGINKi4fiXjhwU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 352,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKi4fiXn3go=",
+									"_parent": {
+										"$ref": "AAAAAAGINKi4fiXjhwU="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 352,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 220,
+							"top": 776,
+							"width": 206.96142578125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKi4fiXkrCE="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKi4fiXlpDo="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKi4fiXmE40="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKi4fiXn3go="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 200,
+					"top": 776,
+					"width": 226.96142578125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKi4fiXjhwU="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKWFAyQzBgI=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKWFAyQxksU="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKWFAyQ0NxE=",
+							"_parent": {
+								"$ref": "AAAAAAGINKWFAyQzBgI="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKWFAyQxksU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWFAyQ1bvk=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWFAyQ0NxE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -32,
+									"top": 344,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWFAyQ2duY=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWFAyQ0NxE="
+									},
+									"font": "Arial;13;1",
+									"left": 485,
+									"top": 758,
+									"width": 102.00048828125,
+									"height": 13,
+									"text": "Register&Login"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWFAyQ36/U=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWFAyQ0NxE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -32,
+									"top": 344,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWFAyQ4ev8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWFAyQ0NxE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -32,
+									"top": 344,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 480,
+							"top": 751,
+							"width": 112.00048828125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKWFAyQ1bvk="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKWFAyQ2duY="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKWFAyQ36/U="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKWFAyQ4ev8="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 480,
+					"top": 736,
+					"width": 112.00048828125,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKWFAyQ0NxE="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKWLniRMsbI=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKWLniRKq98="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKWLniRNvOk=",
+							"_parent": {
+								"$ref": "AAAAAAGINKWLniRMsbI="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKWLniRKq98="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWLniROoCY=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWLniRNvOk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -240,
+									"top": 456,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWLniRPlM0=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWLniRNvOk="
+									},
+									"font": "Arial;13;1",
+									"left": 485,
+									"top": 814,
+									"width": 59.99169921875,
+									"height": 13,
+									"text": "Forum"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWLniRQOYA=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWLniRNvOk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -240,
+									"top": 456,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWLniRRmzQ=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWLniRNvOk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -240,
+									"top": 456,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 480,
+							"top": 807,
+							"width": 69.99169921875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKWLniROoCY="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKWLniRPlM0="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKWLniRQOYA="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKWLniRRmzQ="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 480,
+					"top": 792,
+					"width": 69.99169921875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKWLniRNvOk="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKWRaSRlCks=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKWRaSRjla8="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKWRaSRmTyk=",
+							"_parent": {
+								"$ref": "AAAAAAGINKWRaSRlCks="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKWRaSRjla8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWRaSRnoAU=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWRaSRmTyk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -56,
+									"top": 352,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWRaSRo5aM=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWRaSRmTyk="
+									},
+									"font": "Arial;13;1",
+									"left": 637,
+									"top": 758,
+									"width": 136.0810546875,
+									"height": 13,
+									"text": "Garden Maintenance"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWRaSRpj8Q=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWRaSRmTyk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -56,
+									"top": 352,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWRaSRqUOg=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWRaSRmTyk="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -56,
+									"top": 352,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 632,
+							"top": 751,
+							"width": 146.0810546875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKWRaSRnoAU="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKWRaSRo5aM="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKWRaSRpj8Q="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKWRaSRqUOg="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 632,
+					"top": 736,
+					"width": 146.0810546875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKWRaSRmTyk="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKmgsSYAlm4=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKmgsSX+gNA="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKmgsSYBCkI=",
+							"_parent": {
+								"$ref": "AAAAAAGINKmgsSYAlm4="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKmgsSX+gNA="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKmgsSYCDDM=",
+									"_parent": {
+										"$ref": "AAAAAAGINKmgsSYBCkI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 104,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKmgsSYDpwI=",
+									"_parent": {
+										"$ref": "AAAAAAGINKmgsSYBCkI="
+									},
+									"font": "Arial;13;1",
+									"left": 637,
+									"top": 814,
+									"width": 59.99169921875,
+									"height": 13,
+									"text": "Visit"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKmgsSYEcB0=",
+									"_parent": {
+										"$ref": "AAAAAAGINKmgsSYBCkI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 104,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKmgsSYFihE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKmgsSYBCkI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 104,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 632,
+							"top": 807,
+							"width": 69.99169921875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKmgsSYCDDM="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKmgsSYDpwI="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKmgsSYEcB0="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKmgsSYFihE="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 632,
+					"top": 792,
+					"width": 69.99169921875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKmgsSYBCkI="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKWquiSw7kw=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKWquiSuTVc="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKWquiSxA0g=",
+							"_parent": {
+								"$ref": "AAAAAAGINKWquiSw7kw="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKWquiSuTVc="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWquiSyBeE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWquiSxA0g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -592,
+									"top": 384,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWquiSzNrA=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWquiSxA0g="
+									},
+									"font": "Arial;13;1",
+									"left": 821,
+									"top": 758,
+									"width": 214.65869140625,
+									"height": 13,
+									"text": "Garden Create&Modify&Dismiss"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWquiS0Mu8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWquiSxA0g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -592,
+									"top": 384,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWquiS1UJ4=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWquiSxA0g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -592,
+									"top": 384,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 816,
+							"top": 751,
+							"width": 224.65869140625,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKWquiSyBeE="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKWquiSzNrA="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKWquiS0Mu8="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKWquiS1UJ4="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 816,
+					"top": 736,
+					"width": 224.65869140625,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKWquiSxA0g="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKWY/CR+UL8=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKWY/CR8mQU="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKWY/CR/3GY=",
+							"_parent": {
+								"$ref": "AAAAAAGINKWY/CR+UL8="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKWY/CR8mQU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWY/CSAgxI=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWY/CR/3GY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 296,
+									"top": 536,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWY/CSBIWs=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWY/CR/3GY="
+									},
+									"font": "Arial;13;1",
+									"left": 821,
+									"top": 814,
+									"width": 208.0380859375,
+									"height": 13,
+									"text": "Backend Consultation Feedback"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWY/CSCJWg=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWY/CR/3GY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 296,
+									"top": 536,
+									"width": 153.93701171875,
+									"height": 13,
+									"text": "(from Business Interface)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKWY/CSDs2g=",
+									"_parent": {
+										"$ref": "AAAAAAGINKWY/CR/3GY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 296,
+									"top": 536,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 816,
+							"top": 807,
+							"width": 218.0380859375,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKWY/CSAgxI="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKWY/CSBIWs="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKWY/CSCJWg="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKWY/CSDs2g="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINJmpfiJWLCU="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 816,
+					"top": 792,
+					"width": 218.0380859375,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKWY/CR/3GY="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKoIrSY7PII=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKoIrCY5YtE="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKoIrSY81Do=",
+							"_parent": {
+								"$ref": "AAAAAAGINKoIrSY7PII="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKoIrCY5YtE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoIrSY9Ic8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoIrSY81Do="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 8,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoIrSY+RgU=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoIrSY81Do="
+									},
+									"font": "Arial;13;1",
+									"left": 485,
+									"top": 1054,
+									"width": 59.99169921875,
+									"height": 13,
+									"text": "Forum"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoIrSY/GYs=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoIrSY81Do="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 8,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoIrSZA2gE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoIrSY81Do="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 8,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 480,
+							"top": 1047,
+							"width": 69.99169921875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKoIrSY9Ic8="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKoIrSY+RgU="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKoIrSY/GYs="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKoIrSZA2gE="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 480,
+					"top": 1032,
+					"width": 69.99169921875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKoIrSY81Do="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKoObSZU+8w=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKoObSZSho0="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKoObSZVwF0=",
+							"_parent": {
+								"$ref": "AAAAAAGINKoObSZU+8w="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKoObSZSho0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoObSZWtNA=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoObSZVwF0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 392,
+									"top": -160,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoObSZXE5o=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoObSZVwF0="
+									},
+									"font": "Arial;13;1",
+									"left": 637,
+									"top": 998,
+									"width": 136.0810546875,
+									"height": 13,
+									"text": "Garden Maintenance"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoObSZYRJY=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoObSZVwF0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 392,
+									"top": -160,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoObSZZZwE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoObSZVwF0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 392,
+									"top": -160,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 632,
+							"top": 991,
+							"width": 146.0810546875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKoObSZWtNA="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKoObSZXE5o="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKoObSZYRJY="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKoObSZZZwE="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 632,
+					"top": 976,
+					"width": 146.0810546875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKoObSZVwF0="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKoVAiZtGSU=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKoVAiZrRPM="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKoVAiZu9ks=",
+							"_parent": {
+								"$ref": "AAAAAAGINKoVAiZtGSU="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKoVAiZrRPM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoVAiZvfpY=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoVAiZu9ks="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 40,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoVAiZwgz4=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoVAiZu9ks="
+									},
+									"font": "Arial;13;1",
+									"left": 637,
+									"top": 1054,
+									"width": 59.99169921875,
+									"height": 13,
+									"text": "Visit"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoVAiZxaH8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoVAiZu9ks="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 40,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoVAiZylI8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoVAiZu9ks="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 128,
+									"top": 40,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 632,
+							"top": 1047,
+							"width": 69.99169921875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKoVAiZvfpY="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKoVAiZwgz4="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKoVAiZxaH8="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKoVAiZylI8="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 632,
+					"top": 1032,
+					"width": 69.99169921875,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKoVAiZu9ks="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKocAyaGllg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKocAyaEiaU="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKocAyaHW8o=",
+							"_parent": {
+								"$ref": "AAAAAAGINKocAyaGllg="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKocAyaEiaU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKocAyaInBc=",
+									"_parent": {
+										"$ref": "AAAAAAGINKocAyaHW8o="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 72,
+									"top": -192,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKocAyaJa0s=",
+									"_parent": {
+										"$ref": "AAAAAAGINKocAyaHW8o="
+									},
+									"font": "Arial;13;1",
+									"left": 821,
+									"top": 998,
+									"width": 214.65869140625,
+									"height": 13,
+									"text": "Garden Create&Modify&Dismiss"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKocAyaKf4M=",
+									"_parent": {
+										"$ref": "AAAAAAGINKocAyaHW8o="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 72,
+									"top": -192,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKocAyaLMLE=",
+									"_parent": {
+										"$ref": "AAAAAAGINKocAyaHW8o="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 72,
+									"top": -192,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 816,
+							"top": 991,
+							"width": 224.65869140625,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKocAyaInBc="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKocAyaJa0s="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKocAyaKf4M="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKocAyaLMLE="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 816,
+					"top": 976,
+					"width": 224.65869140625,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKocAyaHW8o="
+					}
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKoioCafLKQ=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKoioCadMI4="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKoioCag5oY=",
+							"_parent": {
+								"$ref": "AAAAAAGINKoioCafLKQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKoioCadMI4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoioCahV10=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoioCag5oY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 72,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoioCai1ew=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoioCag5oY="
+									},
+									"font": "Arial;13;1",
+									"left": 821,
+									"top": 1054,
+									"width": 208.0380859375,
+									"height": 13,
+									"text": "Backend Consultation Feedback"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoioCajMDo=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoioCag5oY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 72,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKoioCakh70=",
+									"_parent": {
+										"$ref": "AAAAAAGINKoioCag5oY="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -72,
+									"top": 72,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 816,
+							"top": 1047,
+							"width": 218.0380859375,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKoioCahV10="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKoioCai1ew="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKoioCajMDo="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKoioCakh70="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 816,
+					"top": 1032,
+					"width": 218.0380859375,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKoioCag5oY="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINKr8tybFE8k=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKr8tybDVXg="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKr8tybGbvo=",
+							"_parent": {
+								"$ref": "AAAAAAGINKr8tybFE8k="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKr8tybDVXg="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKr8tybHmOM=",
+									"_parent": {
+										"$ref": "AAAAAAGINKr8tybGbvo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": -128,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKr8tybI4eg=",
+									"_parent": {
+										"$ref": "AAAAAAGINKr8tybGbvo="
+									},
+									"font": "Arial;13;1",
+									"left": 849,
+									"top": 1239,
+									"width": 185.50390625,
+									"height": 13,
+									"underline": true,
+									"text": "Database search component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKr8tybJZgs=",
+									"_parent": {
+										"$ref": "AAAAAAGINKr8tybGbvo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": -128,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKr8tybKry8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKr8tybGbvo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 768,
+									"top": -128,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 844,
+							"top": 1232,
+							"width": 195.50390625,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKr8tybHmOM="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKr8tybI4eg="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKr8tybJZgs="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKr8tybKry8="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 824,
+					"top": 1232,
+					"width": 215.50390625,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKr8tybGbvo="
+					}
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINK554SdBh54=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;13;0",
+					"left": 960,
+					"top": 1248,
+					"width": 60,
+					"height": 15
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINK6vcydEfW8=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 560,
+					"top": 1160,
+					"width": 145,
+					"height": 27,
+					"text": "Data Access Layer"
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLDI+idoweI=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 192,
+					"top": 952,
+					"width": 225,
+					"height": 42,
+					"text": "Business Implementation Layer"
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLGGYyeG6mg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 224,
+					"top": 720,
+					"width": 177,
+					"height": 42,
+					"text": "Business Interface Layer"
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLLXIyepMZE=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 576,
+					"top": 472,
+					"width": 129,
+					"height": 42,
+					"text": "Application Layer"
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLOAyifWRgc=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 576,
+					"top": 264,
+					"width": 145,
+					"height": 27,
+					"text": "Presentation Layer"
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINJLacCGLDRg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJLacCGJhu8="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJLacCGMwzg=",
+							"_parent": {
+								"$ref": "AAAAAAGINJLacCGLDRg="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJLacCGJhu8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLacSGNgb0=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLacCGMwzg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 88,
+									"top": -448,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLacSGOUqI=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLacCGMwzg="
+									},
+									"font": "Arial;13;1",
+									"left": 257,
+									"top": 335,
+									"width": 212.44970703125,
+									"height": 13,
+									"underline": true,
+									"text": "Interface interaction component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLacSGP60s=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLacCGMwzg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 88,
+									"top": -448,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLacSGQEI0=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLacCGMwzg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 88,
+									"top": -448,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 252,
+							"top": 328,
+							"width": 222.44970703125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJLacSGNgb0="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJLacSGOUqI="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJLacSGP60s="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJLacSGQEI0="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 232,
+					"top": 328,
+					"width": 242.44970703125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJLacCGMwzg="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINJLs/yG9Tjg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJLs/yG7U4k="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJLs/yG+BjM=",
+							"_parent": {
+								"$ref": "AAAAAAGINJLs/yG9Tjg="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJLs/yG7U4k="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLs/yG/hnY=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLs/yG+BjM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -296,
+									"top": -384,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLs/yHA+ng=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLs/yG+BjM="
+									},
+									"font": "Arial;13;1",
+									"left": 561,
+									"top": 335,
+									"width": 196.96142578125,
+									"height": 13,
+									"underline": true,
+									"text": "Data transmission component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLs/yHB18Q=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLs/yG+BjM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -296,
+									"top": -384,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLs/yHCi+Q=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLs/yG+BjM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -296,
+									"top": -384,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 556,
+							"top": 328,
+							"width": 206.96142578125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJLs/yG/hnY="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJLs/yHA+ng="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJLs/yHB18Q="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJLs/yHCi+Q="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 536,
+					"top": 328,
+					"width": 226.96142578125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJLs/yG+BjM="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINJLiQCGkNGg=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINJLiQCGiyQQ="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINJLiQCGl++s=",
+							"_parent": {
+								"$ref": "AAAAAAGINJLiQCGkNGg="
+							},
+							"model": {
+								"$ref": "AAAAAAGINJLiQCGiyQQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLiQCGmGOE=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLiQCGl++s="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1296,
+									"top": -704,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLiQCGnkZE=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLiQCGl++s="
+									},
+									"font": "Arial;13;1",
+									"left": 857,
+									"top": 335,
+									"width": 204.724609375,
+									"height": 13,
+									"underline": true,
+									"text": "Data encapsulation component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLiQCGo43s=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLiQCGl++s="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1296,
+									"top": -704,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINJLiQCGpHNY=",
+									"_parent": {
+										"$ref": "AAAAAAGINJLiQCGl++s="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 1296,
+									"top": -704,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 852,
+							"top": 328,
+							"width": 214.724609375,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINJLiQCGmGOE="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINJLiQCGnkZE="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINJLiQCGo43s="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINJLiQCGpHNY="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 832,
+					"top": 328,
+					"width": 234.724609375,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINJLiQCGl++s="
+					}
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLYnFSjy0E0=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 1240,
+					"top": 384,
+					"width": 137,
+					"height": 42,
+					"text": "Data Transmission"
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINLbdFSj8koQ=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINLbdFSj6NnQ="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINLbdFSj9zLc=",
+							"_parent": {
+								"$ref": "AAAAAAGINLbdFSj8koQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGINLbdFSj6NnQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLbdFSj+pMs=",
+									"_parent": {
+										"$ref": "AAAAAAGINLbdFSj9zLc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -80,
+									"top": -832,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLbdFij/NTc=",
+									"_parent": {
+										"$ref": "AAAAAAGINLbdFSj9zLc="
+									},
+									"font": "Arial;13;1",
+									"left": 1225,
+									"top": 559,
+									"width": 198.92919921875,
+									"height": 13,
+									"underline": true,
+									"text": "User information transmission"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLbdFikAzpA=",
+									"_parent": {
+										"$ref": "AAAAAAGINLbdFSj9zLc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -80,
+									"top": -832,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLbdFikB2vg=",
+									"_parent": {
+										"$ref": "AAAAAAGINLbdFSj9zLc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -80,
+									"top": -832,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1220,
+							"top": 552,
+							"width": 208.92919921875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINLbdFSj+pMs="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINLbdFij/NTc="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINLbdFikAzpA="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINLbdFikB2vg="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 1200,
+					"top": 552,
+					"width": 228.92919921875,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINLbdFSj9zLc="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINLjb0SkYHwo=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINLjb0SkWk4E="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINLjb0SkZK84=",
+							"_parent": {
+								"$ref": "AAAAAAGINLjb0SkYHwo="
+							},
+							"model": {
+								"$ref": "AAAAAAGINLjb0SkWk4E="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjb0Skax3A=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjb0SkZK84="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -112,
+									"top": -656,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjb0SkbuBY=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjb0SkZK84="
+									},
+									"font": "Arial;13;1",
+									"left": 1209,
+									"top": 743,
+									"width": 233.54296875,
+									"height": 13,
+									"underline": true,
+									"text": "Comment information transmission"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjb0Skc9X4=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjb0SkZK84="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -112,
+									"top": -656,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjb0Skd9L8=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjb0SkZK84="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -112,
+									"top": -656,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1204,
+							"top": 736,
+							"width": 243.54296875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINLjb0Skax3A="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINLjb0SkbuBY="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINLjb0Skc9X4="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINLjb0Skd9L8="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 1184,
+					"top": 736,
+					"width": 263.54296875,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINLjb0SkZK84="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINLjrJSkxykU=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINLjrJSkvLfM="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINLjrJSkyXQw=",
+							"_parent": {
+								"$ref": "AAAAAAGINLjrJSkxykU="
+							},
+							"model": {
+								"$ref": "AAAAAAGINLjrJSkvLfM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjrJSkzX0o=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjrJSkyXQw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -480,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjrJSk0IQI=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjrJSkyXQw="
+									},
+									"font": "Arial;13;1",
+									"left": 1185,
+									"top": 919,
+									"width": 273.89501953125,
+									"height": 13,
+									"underline": true,
+									"text": "User interaction information transmission"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjrJSk1hDE=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjrJSkyXQw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -480,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjrJSk2bTg=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjrJSkyXQw="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -480,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1180,
+							"top": 912,
+							"width": 283.89501953125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINLjrJSkzX0o="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINLjrJSk0IQI="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINLjrJSk1hDE="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINLjrJSk2bTg="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 1160,
+					"top": 912,
+					"width": 303.89501953125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINLjrJSkyXQw="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINLjzGClKG0c=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINLjzGClIzCw="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINLjzGClLvnc=",
+							"_parent": {
+								"$ref": "AAAAAAGINLjzGClKG0c="
+							},
+							"model": {
+								"$ref": "AAAAAAGINLjzGClIzCw="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjzGClMTYI=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjzGClLvnc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -288,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjzGClNOC4=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjzGClLvnc="
+									},
+									"font": "Arial;13;1",
+									"left": 1217,
+									"top": 1103,
+									"width": 206.54638671875,
+									"height": 13,
+									"underline": true,
+									"text": "Garden parameter transmission"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjzGClOPHo=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjzGClLvnc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -288,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLjzGClPP8M=",
+									"_parent": {
+										"$ref": "AAAAAAGINLjzGClLvnc="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -128,
+									"top": -288,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1212,
+							"top": 1096,
+							"width": 216.54638671875,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINLjzGClMTYI="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINLjzGClNOC4="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINLjzGClOPHo="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINLjzGClPP8M="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 1192,
+					"top": 1096,
+					"width": 236.54638671875,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINLjzGClLvnc="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINLj5Wyljb+Y=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINLj5WilhLd8="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINLj5WylkS/U=",
+							"_parent": {
+								"$ref": "AAAAAAGINLj5Wyljb+Y="
+							},
+							"model": {
+								"$ref": "AAAAAAGINLj5WilhLd8="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLj5WyllHSA=",
+									"_parent": {
+										"$ref": "AAAAAAGINLj5WylkS/U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -176,
+									"top": -64,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLj5WylmoRk=",
+									"_parent": {
+										"$ref": "AAAAAAGINLj5WylkS/U="
+									},
+									"font": "Arial;13;1",
+									"left": 1217,
+									"top": 1295,
+									"width": 206.83203125,
+									"height": 13,
+									"underline": true,
+									"text": "Other information transmission"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLj5Wyln07c=",
+									"_parent": {
+										"$ref": "AAAAAAGINLj5WylkS/U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -176,
+									"top": -64,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINLj5WylomYA=",
+									"_parent": {
+										"$ref": "AAAAAAGINLj5WylkS/U="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -176,
+									"top": -64,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 1212,
+							"top": 1288,
+							"width": 216.83203125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINLj5WyllHSA="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINLj5WylmoRk="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINLj5Wyln07c="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINLj5WylomYA="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 1192,
+					"top": 1288,
+					"width": 236.83203125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINLj5WylkS/U="
+					}
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINLvQ6imF6es=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;15;0",
+					"left": 608,
+					"top": 1408,
+					"width": 97,
+					"height": 42,
+					"text": "Data Source"
+				},
+				{
+					"_type": "UMLPackageView",
+					"_id": "AAAAAAGINKn6gCYiAW0=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINKn6gCYg9jc="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINKn6gCYjc2k=",
+							"_parent": {
+								"$ref": "AAAAAAGINKn6gCYiAW0="
+							},
+							"model": {
+								"$ref": "AAAAAAGINKn6gCYg9jc="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKn6gCYkpsk=",
+									"_parent": {
+										"$ref": "AAAAAAGINKn6gCYjc2k="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 880,
+									"top": -120,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKn6gCYlWio=",
+									"_parent": {
+										"$ref": "AAAAAAGINKn6gCYjc2k="
+									},
+									"font": "Arial;13;1",
+									"left": 485,
+									"top": 998,
+									"width": 102.00048828125,
+									"height": 13,
+									"text": "Register&Login"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKn6gCYm1p8=",
+									"_parent": {
+										"$ref": "AAAAAAGINKn6gCYjc2k="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 880,
+									"top": -120,
+									"width": 198.4912109375,
+									"height": 13,
+									"text": "(from Business Implementation)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINKn6gCYnfOo=",
+									"_parent": {
+										"$ref": "AAAAAAGINKn6gCYjc2k="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 880,
+									"top": -120,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 480,
+							"top": 991,
+							"width": 112.00048828125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINKn6gCYkpsk="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINKn6gCYlWio="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINKn6gCYm1p8="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINKn6gCYnfOo="
+							}
+						}
+					],
+					"containerView": {
+						"$ref": "AAAAAAGINKH1tCM5isg="
+					},
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 480,
+					"top": 976,
+					"width": 112.00048828125,
+					"height": 40,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINKn6gCYjc2k="
+					}
+				},
+				{
+					"_type": "UMLComponentInstanceView",
+					"_id": "AAAAAAGINOmdnyoAWTw=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"model": {
+						"$ref": "AAAAAAGINOmdnin+sUQ="
+					},
+					"subViews": [
+						{
+							"_type": "UMLNameCompartmentView",
+							"_id": "AAAAAAGINOmdnyoBwsM=",
+							"_parent": {
+								"$ref": "AAAAAAGINOmdnyoAWTw="
+							},
+							"model": {
+								"$ref": "AAAAAAGINOmdnin+sUQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINOmdnyoCPck=",
+									"_parent": {
+										"$ref": "AAAAAAGINOmdnyoBwsM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 464,
+									"top": 16,
+									"height": 13
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINOmdnyoD118=",
+									"_parent": {
+										"$ref": "AAAAAAGINOmdnyoBwsM="
+									},
+									"font": "Arial;13;1",
+									"left": 553,
+									"top": 543,
+									"width": 196.96142578125,
+									"height": 13,
+									"underline": true,
+									"text": "Data transmission component"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINOmdnyoEj/Y=",
+									"_parent": {
+										"$ref": "AAAAAAGINOmdnyoBwsM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 464,
+									"top": 16,
+									"width": 249.97705078125,
+									"height": 13,
+									"text": "(from Sharing Garden System Architecture)"
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGINOmdnyoFvPk=",
+									"_parent": {
+										"$ref": "AAAAAAGINOmdnyoBwsM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 464,
+									"top": 16,
+									"height": 13,
+									"horizontalAlignment": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 548,
+							"top": 536,
+							"width": 206.96142578125,
+							"height": 25,
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGINOmdnyoCPck="
+							},
+							"nameLabel": {
+								"$ref": "AAAAAAGINOmdnyoD118="
+							},
+							"namespaceLabel": {
+								"$ref": "AAAAAAGINOmdnyoEj/Y="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGINOmdnyoFvPk="
+							}
+						}
+					],
+					"font": "Arial;13;0",
+					"containerChangeable": true,
+					"left": 528,
+					"top": 536,
+					"width": 226.96142578125,
+					"height": 45,
+					"nameCompartment": {
+						"$ref": "AAAAAAGINOmdnyoBwsM="
+					}
+				},
+				{
+					"_type": "UMLTextView",
+					"_id": "AAAAAAGINPJoYCpqCc0=",
+					"_parent": {
+						"$ref": "AAAAAAGINIww9B7vshQ="
+					},
+					"font": "Arial;18;0",
+					"left": 656,
+					"top": 192,
+					"width": 305,
+					"height": 48,
+					"text": "Sharing Garden System Architecture"
+				}
+			]
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINI1ikx8ljoE=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Presentation Layer"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINI+ljiCz0hk=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Layeer"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINI/7giDf6rk=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Application Layer",
+			"ownedElements": [
+				{
+					"_type": "UMLComponentInstance",
+					"_id": "AAAAAAGINJhFwyIXJ5E=",
+					"_parent": {
+						"$ref": "AAAAAAGINI/7giDf6rk="
+					},
+					"name": "Data transmission component"
+				}
+			]
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINJBsKCD7vTs=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Business Interface Layer"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINJFhvCFPcm8=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Business Implementation Layer"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINJH7CSFr8wc=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data Access Layer"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINJfHYCHjeAM=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data unpacking component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINJf34SH9VlY=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data encapsulation component"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINJmpfiJUZiY=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Business Interface",
+			"ownedElements": [
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKWFAyQxksU=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Register&Login"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKWLniRKq98=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Forum"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKWRaSRjla8=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Garden Maintenance"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKmgsSX+gNA=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Visit"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKWquiSuTVc=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Garden Create&Modify&Dismiss"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKWY/CR8mQU=",
+					"_parent": {
+						"$ref": "AAAAAAGINJmpfiJUZiY="
+					},
+					"name": "Backend Consultation Feedback"
+				}
+			]
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINKGN0yMdiSI=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data transmission component"
+		},
+		{
+			"_type": "UMLPackage",
+			"_id": "AAAAAAGINKH1tCM35CM=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Business Implementation",
+			"ownedElements": [
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKoIrCY5YtE=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Forum"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKoObSZSho0=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Garden Maintenance"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKoVAiZrRPM=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Visit"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKocAyaEiaU=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Garden Create&Modify&Dismiss"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKoioCadMI4=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Backend Consultation Feedback"
+				},
+				{
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGINKn6gCYg9jc=",
+					"_parent": {
+						"$ref": "AAAAAAGINKH1tCM35CM="
+					},
+					"name": "Register&Login"
+				}
+			]
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINKQ2FCP9TCI=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Database connection component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINKSBEiQXkZI=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Database operation component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINKi4fiXg8Fs=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data transmission component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINKr8tybDVXg=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Database search component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINJLacCGJhu8=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Interface interaction component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINJLs/yG7U4k=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data transmission component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINJLiQCGiyQQ=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data encapsulation component"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINLbdFSj6NnQ=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "User information transmission"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINLjb0SkWk4E=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Comment information transmission"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINLjrJSkvLfM=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "User interaction information transmission"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINLjzGClIzCw=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Garden parameter transmission"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINLj5WilhLd8=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Other information transmission"
+		},
+		{
+			"_type": "UMLComponentInstance",
+			"_id": "AAAAAAGINOmdnin+sUQ=",
+			"_parent": {
+				"$ref": "AAAAAAGINIww8x7urrM="
+			},
+			"name": "Data transmission component"
+		}
+	]
+}
